@@ -8,30 +8,31 @@
 
 <script>
 export default {
-  computed: {
-    posts() {
-      return this.$store.state.posts;
-    },
-    post() {
-      return this.posts.find(el => el.slug === this.slug);
-    }
-  },
   data() {
     return {
-      slug: this.$route.params.slug
-    };
+      slug: this.$route.params.slug,
+    }
+  },
+  computed: {
+    posts() {
+      return this.$store.state.posts
+    },
+    post() {
+      return this.posts.find((el) => el.slug === this.slug)
+    },
   },
   created() {
-    this.$store.dispatch("getPosts");
-  }
-};
+    this.$store.dispatch('getPosts')
+  },
+}
 </script>
 
 <style lang="scss" scoped>
 main.post {
-  margin: 60px auto 50px;
+  margin: 0px auto 50px;
   max-width: 800px;
-  padding: 0 30px 70px;
+  padding: 30px 70px;
+  background: $white;
 }
 
 h1 {

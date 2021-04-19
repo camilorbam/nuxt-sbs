@@ -1,9 +1,34 @@
 <template>
   <div>
-    <app-masthead></app-masthead>
     <div class="posts">
       <main>
-        <div class="post" v-for="post in sortedPosts" :key="post.id">
+        <div>
+          <h1 class="page-title icon-doc">Sports Betting Blog</h1>
+          <p>
+            <img
+              class="alignright size-full wp-image-1722"
+              src="https://sbstg.wpengine.com/wp-content/uploads/2016/09/blog_page.png"
+              alt="SBS News"
+              width="210"
+              height="110"
+            />The sports betting blog section of
+            <a href="https://sbstg.wpengine.com/"
+              ><strong>Safest Betting Sites</strong></a
+            >
+            covers everything from sports betting advice to musings on the
+            latest in the sporting and gambling world. Our blog aims to give the
+            most up to date information on betting (which is an excellent
+            complement our extensive library of sports betting content) while
+            mixing in some humor. Head over to our
+            <a
+              href="https://sbstg.wpengine.com/picks/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >free picks section </a
+            >for our latest free picks on a variety of sports.
+          </p>
+        </div>
+        <div v-for="post in sortedPosts" :key="post.id" class="post">
           <h3>
             <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
           </h3>
@@ -17,10 +42,10 @@
         <div class="tags-list">
           <ul>
             <li
-              @click="updateTag(tag)"
               v-for="tag in tags"
               :key="tag.id"
               :class="[tag.id === selectedTag ? activeClass : '']"
+              @click="updateTag(tag)"
             >
               <a>{{ tag.name }}</a>
               <span v-if="tag.id === selectedTag">✕</span>
@@ -33,53 +58,63 @@
 </template>
 
 <script>
-import AppMasthead from "@/components/AppMasthead.vue";
-
 export default {
-  components: {
-    AppMasthead
-  },
   data() {
     return {
       selectedTag: null,
-      activeClass: "active"
-    };
+      activeClass: 'active',
+    }
   },
   computed: {
     posts() {
-      return this.$store.state.posts;
+      return this.$store.state.posts
     },
     tags() {
-      return this.$store.state.tags;
+      return this.$store.state.tags
     },
     sortedPosts() {
-      if (!this.selectedTag) return this.posts;
-      return this.posts.filter(el => el.tags.includes(this.selectedTag));
-    }
+      if (!this.selectedTag) return this.posts
+      return this.posts.filter((el) => el.tags.includes(this.selectedTag))
+    },
   },
   created() {
-    this.$store.dispatch("getPosts");
+    this.$store.dispatch('getPosts')
   },
   methods: {
     updateTag(tag) {
       if (!this.selectedTag) {
-        this.selectedTag = tag.id;
+        this.selectedTag = tag.id
       } else {
-        this.selectedTag = null;
+        this.selectedTag = null
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style lang="scss">
+h1 {
+  line-height: 1.2em;
+}
+.page-title {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 80px;
+  color: #ffffff;
+  background: url('/h1-heading-bg.jpeg') #34495e no-repeat;
+  font-family: 'Roboto Condensed', Arial Narrow, Arial, sans-serif;
+  font-size: 25px;
+}
+
 .posts {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 6vw;
-  margin: 5em auto;
+  margin: 0px auto 5em;
   max-width: 80vw;
+  padding: 25px 20px;
+  background: #ffffff;
 }
 
 main {
@@ -90,15 +125,11 @@ aside {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-h2 {
-  margin-bottom: 2em;
-}
-
 a,
 a:active,
 a:visited {
-  text-decoration: none;
-  color: black;
+  color: #2980b9;
+  text-decoration: underline;
 }
 
 a.readmore {
@@ -110,28 +141,24 @@ a.readmore {
   position: relative;
   color: #000;
   font-weight: 700;
-  font-family: "Open Sans", serif;
+  font-family: 'Open Sans', serif;
   border: 1px solid #ccc;
   background: #fff;
 }
 
 .tags-title {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  text-transform: capitalize;
-  letter-spacing: 0;
-  font-size: 1.2rem;
-  padding: 15px;
-  margin: 0 35px;
   position: relative;
-  top: -25px;
+  margin: 0px;
+  padding: 10px 10px 10px 38px;
+  color: #ccdceb;
+  background-color: #34495e;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
 
 .tags-list {
   background: #f5f5f5;
-  padding: 70px 25px 25px;
-  margin-top: -65px;
+  padding: 25px 25px;
 }
 
 .post {
@@ -151,7 +178,7 @@ a.readmore {
 }
 
 .tags-list li {
-  font-family: "Open Sans", serif;
+  font-family: 'Open Sans', serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 6px 15px;
@@ -192,19 +219,5 @@ a.readmore {
   &:hover:before {
     right: -1px;
   }
-}
-
-.slide::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #000;
-  transition: right 0.3s ease;
-  z-index: -1;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: 108%;
-  backface-visibility: hidden;
 }
 </style>

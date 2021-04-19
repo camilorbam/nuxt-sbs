@@ -28,7 +28,7 @@ export default {
     {
       rel: "stylesheet",
       href:
-        "https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap"
+        "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto+Condensed:700,700i&display=swap"
     }],
   },
 

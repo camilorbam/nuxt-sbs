@@ -1,5 +1,5 @@
 <template>
-  <section class="masthead">
+  <section>
     <h1>{{ tagline }}</h1>
   </section>
 </template>

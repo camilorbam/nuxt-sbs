@@ -1,16 +1,21 @@
 <template>
   <div>
-    <app-nav />
+    <header>
+      <app-header />
+      <app-nav />
+    </header>
     <nuxt />
   </div>
 </template>
 
 <script>
 import AppNav from '~/components/AppNav.vue'
+import AppHeader from '~/components/AppHeader.vue'
 
 export default {
   components: {
     AppNav,
+    AppHeader,
   },
 }
 </script>
@@ -28,14 +33,19 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background: url('/body_bg_basketball.jpeg') no-repeat center top;
+  background-color: #17375f;
+  background-size: 100%;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Alata', serif;
-  font-weight: normal;
+  margin: 0 0 20px;
+  color: #34495e;
+  font-family: 'Roboto Condensed', Arial Narrow, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.2em;
 }
 
 *,
@@ -49,9 +59,18 @@ h3 {
   margin: 2em 0 25px;
 }
 
+header {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
 h1 {
+  line-height: 1.2em;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 img {
