@@ -55,10 +55,6 @@ h3 {
   margin: 0;
 }
 
-.individual h3 {
-  margin: 2em 0 25px;
-}
-
 header {
   position: relative;
   width: 100%;
