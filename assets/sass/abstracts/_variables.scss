@@ -1,10 +1,8 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-$font-size-root: 20px;
 $version: '1.0.8';
-
-$spritesheet: #{'/spritesheet.png?v=' + $version};
+/* Spritesheet Path */
+$spritesheet: #{'/spritesheets/spritesheet.png?v=' + $version};
+$spritesheet-sbw: #{'/spritesheets/spritesheet-sb-wizard.png?v=' + $version};
+$spritesheet-svg: #{'/spritesheets/icons.svg?v=' + $version + '#'};
 
 // Scales
 $blue-900: #263238;
@@ -47,6 +45,8 @@ $green-300: #79a70a;
 $green-200: #16a61e;
 $green-100: #01b169;
 
+$yellow: #fee801;
+
 // Variables
 $primary: $blue-300;
 $secondary: $orange-100;
@@ -57,10 +57,45 @@ $border-color: $wb-500;
 $link-color: $blue-600;
 $link-hover-color: $red-200;
 
-$font-title: 'Roboto Condensed', Arial Narrow, Arial, sans-serif;
-$font-body: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-
 $break-xs: 479px;
 $break-sm: 575px;
 $break-md: 880px;
 $break-lg: 1079px;
+
+$spacing-list: 5 10 15 20;
+$screens-map: (
+        lg: $break-lg,
+        md: $break-md,
+        sm: $break-sm,
+        xs: $break-xs
+);
+$directions-map: (
+        t:top,
+        r:right,
+        b:bottom,
+        l:left
+);
+
+$font-title: 'Roboto Condensed', Arial Narrow, Arial, sans-serif;
+$font-body: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+// Used in buttons
+$cinnabar: #e74c3c;
+$mahogany: #ca4234;
+$lochmara: #006ebb;
+$navy-blue: #014ec3;
+
+$available-buttons: yellow red green gray orange orange2 blue;
+
+$responsive-table-text-colors: (
+  blue:#438ccc,
+  red:#c0392b,
+  green:#46a128,
+  yellow:#f2ce4e,
+);
+
+$responsive-text-sizes: (
+  md:14px,
+  lg:16px,
+  xlg:18px,
+);

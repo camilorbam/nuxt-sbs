@@ -1,0 +1,47 @@
+/*Front Page Mission Area */
+.missonarea { margin-bottom: 30px;padding: 20px; border: 1px solid $wb-450; background: $wb-50;}
+.missionitem { margin-bottom: 20px; border-bottom: 1px dotted $wb-550; overflow: hidden;}
+.missionitem .icon { float: left; width: 130px; height: 130px; margin: 0 30px 20px 0; background: url($spritesheet);}
+.missionitem .info {overflow: hidden;}
+.missionitem .info h4 {font-size: 17px;text-transform: uppercase;}
+.missonarea .missionitem:last-child {margin: 0;border: none;}
+.missonarea .missionitem:first-child {padding-top: 20px;}
+.missionitem .icon.sportreviews {background-position: -132px -738px; }
+.missionitem .icon.industrynews {background-position: 0px -738px; }
+.missionitem .icon.extfaq {background-position: -264px -738px; }
+.missionitem .icon.bettingguide {background-position: 0px -606px; }
+.missionitem .icon.sbetstrategy {background-position: -132px -606px; }
+.missionitem .icon.bettingpicks {background-position: -264px -606px; }
+
+/*Front Page Betting Now Area */
+.whatbetting {position: relative; margin-bottom: 20px; padding: 20px 20px 5px; border: 1px solid #ffd798; overflow: hidden; background: #fff3e0;}
+.whatbetting .info { position: relative;padding: 0 0 0 175px;}
+.whatbetting figure {position: absolute;z-index: 2;top: 50px; left: 35px;}
+.whatbetting .buttonarea {margin-bottom: 15px; padding: 5px 0 0; border-bottom: 1px dotted #aaaaaa;overflow: hidden;}
+.whatbetting .buttonarea a {display: block; position: relative; float: left; margin-bottom: 15px; -moz-border-radius: 3px; border-radius: 3px;color: #6b4842;font-family: $font-title; font-size: 15px; font-weight: bold; line-height: 1.2em;text-decoration: none; text-transform: uppercase;}
+.whatbetting .buttonarea a.guide {width: 160px;height: 60px; margin-right: 20px;padding: 14px 20px 16px 63px;border-bottom: 3px solid #d9c19a; background: #f0d5aa;}
+.whatbetting .buttonarea a.guide::before {content: ""; position: absolute; top: 12px; left: 15px; width: 24px; height: 32px;background: url($spritesheet) -240px -28px;}
+.whatbetting .buttonarea a.stats {width: 225px;height: 60px; padding: 14px 20px 16px 63px;border-bottom: 3px solid #cbcbaf;background: #d6d6b8; }
+.whatbetting .buttonarea a.stats::before {content: ""; position: absolute; top: 12px; left: 15px;width: 30px; height: 32px;background: url($spritesheet) -208px -28px;}
+.whatbetting .info img {vertical-align: middle;}
+.whatbetting .info span.bestsportsbook {padding-right: 10px; font-weight: bold;}
+
+/*Front Page Betting On Area */
+.placebetson {margin-bottom: 20px;padding: 20px;border: 1px solid $wb-450; background: $wb-100;}
+.placebetson .toparea {position: relative; padding: 0 290px 5px 0; border-bottom: 1px dotted #bbbbbb;}
+.placebetson .toparea::after {content: ''; position: absolute; top: 0; right: 10px; width: 220px; height: 218px; background: url($spritesheet) -3px -1047px;}
+.placebetson .honest {padding: 10px 0; border-bottom: 1px dotted #bbbbbb;}
+.placebetson .placebets {padding: 15px 0 5px; text-align: center;}
+.placebetson .honest img {display: block; margin: 0 auto;}
+
+img.trustimage { margin: -65px 20px 10px 10px; }
+h3.home-title { margin-bottom: 7px; color: $black; font-size: 30px; }
+h1.home-title { margin-bottom: 10px; color: $primary; font-size: 22px; font-style: italic; }
+h3.home-subtitle { color: $wb-850; color: #444444; font-family: arial; font-size: 15px; }
+ul.greencheck.home-intro { margin: 0 0 20px 48px; font-size: 15px; }
+.page-id-3357 #breadcrumbs { display: none; }
+
+.payout-list a { display: block; position: relative; float: left; width: 165px; height: 110px; margin: 5px; padding: 10px; border: 1px solid #e0e0e0; list-style: none; background: $white; text-align: center; }
+.payout-list a img { display: block; position: absolute; right: 0; bottom: 60px; left: 0; max-width: 92%; height: auto; margin: 0 auto;}
+.payout-list a span.lettergrade { position: absolute; right: 0; bottom: 0px; left: 0; margin: 0 auto; font-size: 40px; }
+.payout-list { overflow: hidden; }

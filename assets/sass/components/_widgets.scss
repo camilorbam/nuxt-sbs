@@ -1,0 +1,156 @@
+/* Sidebar */
+.sidebar { float: right; width: 245px; }
+.sidebar .widget-title, .general-info-table .widget-title { position: relative; margin: 0px; padding: 10px 10px 10px 38px; color: #ccdceb; background-color: $blue-800; font-family: $font-body; font-size: 15px; }
+.sidebar .widget-title::before, .general-info-table .widget-title::before { content: ""; position: absolute; top: 9px; left: 6px; width: 20px; height: 20px; background: url($spritesheet) 0 -53px; }
+.widget_latestfromcategory_widget .widget-title { padding: 10px 10px 10px 42px; }
+.widget_latestfromcategory_widget .widget-title::before { top: 9px;left: 6px; width: 27px; height: 20px; background-position: -22px -53px; }
+.sidebar-widget #nav_menu-2 .widget-title::before { top: 9px;left: 6px; width: 19px; height: 20px; background-position: -51px -53px; }
+.sidebar-widget #nav_menu-3 .widget-title::before { top: 9px;left: 6px; width: 22px; height: 21px; background-position: -71px -53px; }
+.widget-title.sharethumb::before { top: 9px;left: 6px; width: 18px; height: 20px; background-position: -278px -63px; }
+.sidebar li { list-style: none; }
+.widget-container { padding-bottom: 20px; }
+.widget_nav_menu ul li a { display: block; width: 100%; padding: 10px; border: solid 1px #e8e8e8; border-top: none; color: $wb-800; background-color: $wb-100; font-size: 13px; text-decoration: none; }
+.widget_nav_menu ul li a:before { content: "\2666"; padding-right: 10px; }
+.widget_nav_menu ul li a:hover { color: $red-200; background-color: $white; }
+.sidepostrow { position: relative; padding: 10px 5px; border-bottom: 1px dashed $border-color; overflow: hidden; }
+.sidepostrow:hover { background: #f3f3f3; }
+.sidepostrow:last-child { border-bottom: none; }
+.sidepostrow-img { display: inline-block; float: left; vertical-align: top; width: 60px; height: 50px; margin-right: 10px; overflow: hidden;}
+.sidepostrow-meta { display: inline-block; vertical-align: top; width: 70%; padding-left: 3%; color: $wb-550; font-size: 11px; }
+.sidepostrow-meta h4 { margin-bottom: 4px; font-family: $font-body; font-size: 14px;}
+.sidepostrow-meta a { color: $wb-800; font-size: 14px; font-weight: bold; text-decoration: none; }
+.side_featimg { display: block; width: 60px; height: auto; min-height: 50px;}
+.widget-container .posts-list.cards {
+  display: block;
+  margin-bottom: initial;
+  .entry {
+    height:120px;
+    margin: initial;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  h3 { line-height:1.2em;}
+
+  .widget-title {
+    margin-bottom: 12px;
+  }
+}
+
+/*Newsletter */
+.newsletter-form { position: relative; }
+.newsletterarea { margin-bottom: 20px; padding: 3px; border: 1px solid #dce0ca; }
+.newsletterarea h4 { margin-bottom: 5px; color: $wb-850; font-size: 24px; line-height: 1em; text-align: center; text-transform: uppercase; }
+.newsletterarea .toparea { margin-bottom: 5px; padding: 10px; color: $wb-750; background: $wb-150; font-size: 13px; text-align: center; }
+.newsletterarea form { margin: 0 0 10px; padding: 0 5px;}
+.newsletter-form input.email { width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid $wb-450; color: $wb-800; background: $white; font-size: 13px; text-align: center;}
+.newsletter-form input.submit { display: block; width: 100%; height: 40px; margin: 0 auto; border: 0; border-bottom: 2px solid #3e4853; -moz-border-radius: 3px; border-radius: 3px; color: $white; background: $blue-700; font-family: $font-title; font-size: 16px;font-weight: bold; line-height: 40px;text-align: center; text-transform: uppercase; }
+.newsletter-form input.submit:hover { border-bottom: 2px solid $wb-600; background: $wb-550; }
+.newsletterarea .toparea span { display: block; padding-bottom: 10px; line-height: 1.1em; }
+
+.optinbox { margin-bottom: 25px; padding: 18px; border: 1px solid #d3d7b1; overflow: hidden; background: #f9fbe7; }
+.optinbox .optin-text { position: relative; float: left; width: 57%;padding-left: 90px; }
+.optinbox .optin-form { position: relative; float: right; width: 38%; margin-top: -10px; }
+.optinbox .optin-form span.unsubscribe { position: absolute; bottom: -21px; left: 2px; color: $wb-600; font-size: 10px; }
+.optinbox .optin-text::before { content: ''; position: absolute; top: 0px; left: 0px; width: 64px; height: 64px; background: url($spritesheet) -123px -160px; }
+.optintext1, .optintext2, .optintext3 { display: block; color: #444444; font-size: 16px; font-weight: bold; line-height: 1.6em; }
+.optintext1 { color: $red-200; font-size: 19px; text-transform: uppercase; }
+.optinbox input.email { padding: 10px 10px 5px; text-align: left; }
+.optinbox input.submit { display: inline-block; width: 100%; }
+.optinbox input.submit:hover { border-bottom: 2px solid $wb-700; background: $wb-550; }
+
+.newsletter-form.error .email { position: relative; border-color: #ff9090; background-color: #ffd0cb; }
+.newsletter-form .error-message { display: none; }
+.newsletter-form.error .error-message { display: block; margin-bottom: 5px; color: #fd0000;}
+.newsletterarea .newsletter-form.error .error-message { text-align: center; }
+
+.calc-popup .newsletter-form { margin-bottom: 15px; }
+.calc-popup .newsletter-form input.email { display: inline-block; width: 300px; max-width: 100%; font-size: 15px; }
+.calc-popup .newsletter-form input.submit { display: inline-block; width: 150px; height: 42px; border-bottom: 2px solid #cf3200; background: linear-gradient(to bottom, $secondary 0%, $red-100 100%); }
+.calc-popup .newsletter-form input.submit:hover { border-bottom: 2px solid #0e6d14; background: #19bb22; }
+.calc-popup .newsletter-form.error { margin-bottom: 30px; }
+.calc-popup .newsletter-form.error .error-message { position: absolute; right: 0; left: 0; }
+
+/*Sidebar Share*/
+
+.sidebarshare { margin-bottom: 0; }
+.share {
+  position: relative; margin-top: 5px;overflow: hidden; font-size: 15px;
+
+  &.twitter { border: 1px solid $blue-200; color: #008cdd; background: $blue-100;}
+  &.facebook { border: 1px solid #ced9f2;color: #3b5998; background: #e3ebfc;}
+  &.youtube { border: 1px solid #ffb5b5; color: #d80000; background: #fbdede; }
+
+  .icon { position: relative; float: left; width: 50px; height: 50px;}
+  &.twitter .icon { border-right: 1px solid $blue-200; }
+  &.facebook .icon { border-right: 1px solid #ced9f2; }
+  &.youtube .icon { border-right: 1px solid #ffb5b5; }
+
+  span { display: inline-block; padding: 14px 0 0 18px;}
+  &.twitter::after, &.facebook::after, &.youtube::after { content: ''; position: absolute;background: url($spritesheet);;}
+  &.twitter::after { top: 12px; left: 10px;width: 31px;height: 25px;background-position: -232px -63px;}
+  &.facebook::after { top: 13px; left: 18px;width: 13px;height: 24px;background-position: -263px -63px;}
+  &.youtube::after { top: 13px; left: 7px;width: 35px;height: 24px;background-position: -294px -189px;}
+
+  &:hover { background: $wb-200;}
+}
+
+/* Sidebar Picks */
+
+.pickswrap { margin-bottom: 0;}
+.pickblock { margin-top: 5px; padding: 10px; border: 1px solid $wb-250; overflow: hidden; background: $wb-100; font-size: 11px;}
+.pickblock .iconarea { float: left;width: 45px;margin-right: 18px; color: #f87047; font-weight: bold; text-align: center;text-transform: uppercase;}
+.pickblock .iconarea.NFL, .pickblock .iconarea.NCAAF, .pickblock .iconarea.XFL { color: #a15555;}
+.pickblock .iconarea.MLB { color: #dd1812;}
+.pickblock .iconarea.NHL { color: #759c90;}
+.pickblock .iconarea.ESPORTS { color: #3d9ae8;}
+.pickblock .iconarea.GOLF, .pickblock .iconarea.PGA { color: #46a128;}
+.pickblock .iconarea.HORSE { color: #ac6e31;}
+.pickblock .iconarea.TENNIS { color: #5f8302;}
+.pickblock .iconarea.MOTOR { color: #24b4af;}
+.pickblock .iconarea.BOXING { color: #dd2201;}
+.pickblock .iconarea.MMA { color: $blue-700;}
+.pickblock .iconarea.SOCCER, .pickblock .iconarea.FOOTBALL { color: #486060;}
+.pickblock .iconarea .icon { width: 22px; height: 22px; margin: 0 auto 5px; background: url($spritesheet) -396px -683px; }
+.pickblock .iconarea.NFL .icon, .pickblock .iconarea.NCAAF .icon, .pickblock .iconarea.XFL .icon { width: 23px;height: 23px; background: url($spritesheet) -420px -682px; }
+.pickblock .iconarea.NHL .icon { width: 23px;height: 23px; background: url($spritesheet) -422px -708px; }
+.pickblock .iconarea.MLB .icon { background: url($spritesheet) -396px -708px; }
+.pickblock .iconarea.ESPORTS .icon { width: 22px; height: 24px; background: url($spritesheet) -396px -732px; }
+.pickblock .iconarea.TENNIS .icon { width: 28px; height: 27px; background: url($spritesheet) -398px -851px; }
+.pickblock .iconarea.GOLF .icon, .pickblock .iconarea.PGA .icon { width: 28px; height: 28px; background: url($spritesheet) -433px -819px; }
+.pickblock .iconarea.SOCCER .icon, .pickblock .iconarea.FOOTBALL .icon { width: 28px; height: 26px; background: url($spritesheet) -396px -821px; }
+.pickblock .iconarea.HORSE .icon { width: 30px; height: 21px; background: url($spritesheet) -420px -733px; }
+.pickblock .iconarea.MOTOR .icon { width: 36px; height: 22px; background: url($spritesheet) -392px -955px; }
+.pickblock .iconarea.BOXING .icon { width: 28px; height: 28px; background: url($spritesheet) -478px -953px; }
+.pickblock .iconarea.MMA .icon { width: 29px; height: 27px; background: url($spritesheet) -439px -994px; }
+.pickblock .iconarea.GENERAL .icon { width: 33px; height: 28px; background: url($spritesheet) -434px -957px; }
+.pickblock .pickinfo { float: left; width: 155px; }
+.pickmore { margin-bottom: 5px; padding: 0 0 2px;border-bottom: 1px solid $wb-350;overflow: hidden;}
+.pickblock span.pick { display:block; font-size:12px; }
+.pickblock .pickinfo span.date { display:block; float:left; font-weight:bold; }
+.pickblock .pickinfo span.more { display:block; float:right; font-family:$font-body; font-size:12px; font-weight:bold; text-transform:uppercase; }
+
+/*Sidebar Guide and Top Sites */
+
+.sidebar .widget-container { padding-bottom: 20px; }
+.sidebar .newsletterarea { margin-bottom: 0px; }
+.sidebar img.sidebar-guide, .sidebar .widget_media_image img { display: block; margin: 0 auto 0; }
+
+.top-site-widget { margin-bottom: 25px; padding-top: 15px; }
+.top-site-widget .site-row { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed $border-color; }
+.top-site-widget .widget-container { padding: 0; }
+.top-site-widget .widget-container:last-child .site-row { padding: 0; border: none; }
+.top-site-widget .site-row img { float: left; width: 70px; max-width: 70px; height: 70px; max-height: 70px; margin-right: 15px; }
+.top-site-widget .site-row span.site { display: block; font-weight: bold; }
+.top-site-widget .site-row span.feature { display: block; color: #9c1708; font-size: 12px; font-weight: bold; font-style: italic; }
+.top-site-widget .site-row a.betting-button { display: inline-block; width: 85px; padding: 8px 5px 2px; color: $white; background: $green-100; text-align: center; text-decoration: none; text-transform: uppercase; }
+
+/* Sticky Sidebar CTA */
+.widget-sidebar-cta .widget-title:before { display: none; }
+.widget-sidebar-cta .widget-title { width: 100%; padding: 14px 10px 10px; color: $white; background-color: $blue-800; font-family: $font-title; font-size: 18px; text-align: center; text-transform: uppercase; }
+.widget-sidebar-cta .body { width: 98%; margin-left: 1%; background-size: cover; text-align: center; }
+.widget-sidebar-cta .logo img { width: 205px; max-width: 85%; height: auto; margin: 25px auto 15px; }
+.widget-sidebar-cta .subtitle { margin-bottom: 10px; color: #fee801; font-family: $font-body; font-size: 15px; text-transform: uppercase; }
+.widget-sidebar-cta ul { display: inline-block; margin: 0 10% 10px; color: $white; font-family: Arial; font-size: 12px; font-weight: bold; text-align: left; }
+.widget-sidebar-cta ul li { display: list-item; list-style: disc; }
+.widget-sidebar-cta .btn { display: inline-block; width: 85%; margin: 10px 0 16px; border-radius: 3px; }

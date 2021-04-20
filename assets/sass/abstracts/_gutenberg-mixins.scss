@@ -1,0 +1,59 @@
+@mixin grid-block-col-classes($prefix: '', $grid-item-selector: '.wp-block-sbs-grid-item') {
+    $spacingOpts: (5, 10, 15);
+
+    @for $col from 1 through 6 {
+      $col-pct: percentage(1 / $col);
+
+      &.cols-#{$prefix}#{$col} {
+        #{$grid-item-selector} {
+          width: $col-pct;
+        }
+
+        @if $prefix == 'md-' or $prefix == 'sm-' {
+          &.is-style-toc #{$grid-item-selector} {
+            @if $col != 1 {
+              border: none;
+
+              &:nth-child(n+#{($col) + 1}) {
+                border-top: 1px solid #ffffff;
+
+                &::before {
+                  top: -1px;
+                  bottom: unset;
+                  right: 9px;
+                  left: 9px;
+                  height: 1px;
+                  width: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @each $spacing in $spacingOpts {
+        $spacing_val: #{$spacing/2}px;
+
+        &.cols-#{$prefix}#{$col}.has-spacing-#{$spacing} {
+          @if $col != 1 {
+            margin: 0 -#{$spacing_val};
+          }
+
+          #{$grid-item-selector} {
+            margin-top: $spacing_val;
+            margin-bottom: $spacing_val;
+
+            @if $col == 1 {
+              width: $col-pct;
+            }
+            @else {
+              width: calc(#{$col-pct} - #{$spacing}px);
+              margin-left: $spacing_val;
+              margin-right: $spacing_val;
+            }
+
+          }
+        }
+      }
+    }
+  }

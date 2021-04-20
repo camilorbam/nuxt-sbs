@@ -1,0 +1,17 @@
+/* Google Custom Search */
+.gsc-search-box table { margin:0; border:none; }
+.gsc-search-box table td { padding:0; border:none; background:none !important; }
+.search-box form.gsc-search-box { margin-bottom:0; font-size: 12px; }
+.search-box .gsc-input-box { padding:6px 9px; border-width:1px; }
+.search-box .gsc-input-box #gsc-i-id1 { font-size:1em; text-indent:0 !important; background:none !important; color: $wb-800; }
+.search-box .gsc-input-box .gsib_b { display:none }
+.search-box .cse .gsc-search-button-v2, .search-box .gsc-search-button-v2 { padding:9px 13px; background:#00a7e5; border:none; }
+.search-box .gsc-search-button-v2 svg { width:18px; height:18px; }
+
+/* Contact */
+div.wpcf7 { margin-bottom: 20px; padding: 20px 20px 5px; border: 1px solid #e2e2e2; background: $wb-100;}
+div.wpcf7 form { margin: 0;}
+div.wpcf7 input.wpcf7-text, div.wpcf7 textarea { width: 100%; padding: 13px 20px 11px 20px;border: 1px solid #e2e2e2; background: $white; }
+div.wpcf7 input[type="submit"] { display: block; width: 160px; height: 50px; border: 0; border-bottom: 2px solid #ce5f1b; -moz-border-radius: 3px; border-radius: 3px; color: $white; background: #f37020; font-family: $font-title; font-size: 16px; font-weight: bold; line-height: 50px;text-align: center; text-transform: uppercase;}
+div.wpcf7 input[type="submit"]:hover { border-bottom: 2px solid $wb-700;background: $wb-550;}
+.wpcf7-recaptcha { margin-bottom: 16px;}

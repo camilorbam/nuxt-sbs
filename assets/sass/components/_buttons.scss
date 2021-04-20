@@ -1,0 +1,82 @@
+/* Buttons */
+
+%button-style{
+  display: block;
+  padding: 10px 18px;
+  margin: 10px auto;
+  color: $white;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:$font-title, Arial, sans;
+  font-size:20px;
+  background:#255897;
+  background: linear-gradient(to bottom, $secondary 0%, $red-100 100%);
+  border-radius:3px;
+  border-bottom: 2px solid #cf3200;
+  cursor: pointer;
+
+  &:hover { color: $white; background: #c23709; }
+}
+
+a.btn {
+  @extend %button-style;
+
+  &.btn-yellow { border-color: #d29e0b; color: $black; background: #ffd91c; background: linear-gradient(to bottom, #ffd91c 0%, #f8b60a 100%); }
+  &.btn-yellow:hover { color: $black; background: linear-gradient(to bottom, #edcb1e 0%, #dda30b 100%); }
+  &.btn-orange { border-bottom-color:#cf3200; background: $secondary; background: linear-gradient(to bottom, $secondary 0%, $red-100 100%); font-size: 17px; font-weight: bold; }
+  &.btn-orange:hover { border-bottom-color:#0e6d14; background: #19bb22; }
+  &.btn-orange2 { border-bottom-color:#cf3200; background: linear-gradient(to bottom, $secondary 0%, $red-100 100%); font-weight: bold; }
+  &.btn-orange2:hover { background: #c23709; }
+  &.btn-gray { border-bottom-color: #8a8a8a; background: #a9a9a9; }
+  &.btn-gray:hover { border-bottom-color: #a9a9a9; background-color: #8a8a8a; }
+  &.btn-red{ border-bottom-color: #bd3e31; background: #e74c3c; }
+  &.btn-red:hover { border-bottom-color: #bd3e31; background: #c14436; }
+  &.btn-green { border-bottom-color: #13631b; background: linear-gradient(to bottom, $green-200 0%, #128919 100%); }
+  &.btn-green:hover { background: #106818; }
+  &.btn-blue { border-bottom: 3px solid #2670a1; background: linear-gradient(to bottom, $primary 0%, $blue-500 100%); }
+  &.btn-blue:hover { background: #2670a1; }
+
+  &.btn-sm { width:130px; padding: 8px 7px; }
+  &.btn-md { width:230px; padding: 14px 15px; }
+  &.btn-lg { width:320px; padding: 16px 18px; border-width: 0 0 3px 0; font-size: 26px; }
+  &.btn-xl { width: 420px; padding: 18px 18px; border-width: 0 0 4px 0; font-size: 32px; }
+  &.btn-block { display:block; width: 100%; }
+}
+
+/* Legacy Button Classes */
+.button-redbg { display: inline-block; padding: 12px 15px; border-bottom: 2px solid #cf3200; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;color: $white;background: $secondary;background: -moz-linear-gradient(top, $secondary 0%, $red-100 100%);background: -webkit-linear-gradient(top, $secondary 0%, $red-100 100%);background: linear-gradient(to bottom, $secondary 0%, $red-100 100%); background-color: $secondary; font-family: $font-title; font-weight: bold; text-align: center; text-decoration: none; text-transform: uppercase;}
+.button-redbg:hover { color: $white; background: #c23709; }
+.button-redbg.fullwidth { display: block; }
+.button-greybg { padding: 15px 10px; border-bottom: solid 2px #8a8a8a; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: #a9a9a9; text-align: center; }
+.button-greybg:hover { border-bottom-color: #a9a9a9; background-color: #8a8a8a; }
+.button-redbg.smaller { padding: 8px 20px; }
+.button-redbg.lg-green { display: block; padding: 10px 5px; border-bottom: 2px solid #13631b;
+  background: $green-200; background: -moz-linear-gradient(top, $green-200 0%, #128919 100%); background: -webkit-linear-gradient(top, $green-200 0%, #128919 100%); background: linear-gradient(to bottom, $green-200 0%, #128919 100%); font-size: 20px;}
+.button-redbg.lg-green:hover { background: #106818; }
+.button-redbg.bluebg { border: 0; border-bottom: 3px solid #2670a1; -moz-border-radius: 3px; border-radius: 3px; color: $white; background: linear-gradient(to bottom, $primary 0%, $blue-500 100%); background: -moz-linear-gradient(top, $primary 0%, $blue-500 100%);background: -webkit-linear-gradient(top, $primary 0%, $blue-500 100%); }
+.button-redbg.bluebg:hover { background: #2670a1; }
+
+.betbuttons { padding-top: 10px; clear: both;}
+a.bet-button, .toggle-button { display: inline-block; position: relative; width: 210px; margin-bottom: 10px; padding: 16px 5px 16px 60px; border-bottom: 3px solid #9b7243;-moz-border-radius: 3px; border-radius: 3px;color: $white; background: #bf8c53; font-family: $font-title;font-size: 15px;text-decoration: none; text-transform: uppercase; }
+a.bet-button:hover, .toggle-button:hover { background: #9b7243;}
+a.bet-button.teal, .toggle-button.teal { border-bottom: 3px solid #108575;background: #13a08d;}
+a.bet-button.sand, .toggle-button.sand { border-bottom: 3px solid #a5a580;color: #805c3f; background: #d8d8a8;}
+a.bet-button.teal:hover, .toggle-button.teal:hover { background: #108575;}
+a.bet-button.sand:hover, .toggle-button.sand:hover { background: #a5a580;}
+a.bet-button.right-margin, .toggle-button.right-margin { margin-right: 15px;}
+a.bet-button.nfl-button-icon::before, .toggle-button.nfl-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -488px -2px;}
+a.bet-button.helmet-button-icon::before, .toggle-button.helmet-button-icon::before { content: ''; position: absolute;top: 14px; left: 18px; width: 32px; height: 26px; background: url($spritesheet) -522px -2px;}
+a.bet-button.nflplr-button-icon::before, .toggle-button.nflplr-button-icon::before { content: ''; position: absolute;top: 11px; left: 20px; width: 28px; height: 32px; background: url($spritesheet) -557px -2px;}
+a.bet-button.baseball-button-icon::before, .toggle-button.baseball-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -587px -2px;}
+a.bet-button.glove-button-icon::before, .toggle-button.glove-button-icon::before { content: ''; position: absolute;top: 12px; left: 15px; width: 32px; height: 32px; background: url($spritesheet) -555px -37px;}
+a.bet-button.mlbplr-button-icon::before, .toggle-button.mlbplr-button-icon::before { content: ''; position: absolute;top: 11px; left: 20px; width: 28px; height: 32px; background: url($spritesheet) -589px -37px;}
+a.bet-button.goal-button-icon::before, .toggle-button.goal-button-icon::before { content: ''; position: absolute;top: 14px; left: 15px; width: 32px; height: 32px; background: url($spritesheet) -585px -71px;}
+a.bet-button.basketball-button-icon::before, .toggle-button.basketball-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -585px -105px;}
+a.bet-button.nbaplr-button-icon::before, .toggle-button.nbaplr-button-icon::before { content: ''; position: absolute;top: 11px; left: 20px; width: 27px; height: 33px; background: url($spritesheet) -587px -139px;}
+a.bet-button.hockey-button-icon::before, .toggle-button.hockey-button-icon::before { content: ''; position: absolute;top: 11px; left: 20px; width: 32px; height: 32px; background: url($spritesheet) -519px -32px;}
+a.bet-button.soccer-button-icon::before, .toggle-button.soccer-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -483px -37px;}
+a.bet-button.esports-button-icon::before, .toggle-button.esports-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -622px 0px;}
+a.bet-button.headset-button-icon::before, .toggle-button.headset-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -622px -37px;}
+a.bet-button.mma-button-icon::before, .toggle-button.mma-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -622px -74px;}
+a.bet-button.boxing-button-icon::before, .toggle-button.boxing-button-icon::before { content: ''; position: absolute;top: 13px; left: 16px; width: 32px; height: 32px; background: url($spritesheet) -449px -37px;}

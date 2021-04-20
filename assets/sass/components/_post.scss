@@ -1,0 +1,192 @@
+/* Pagination */
+.pagination { margin: 0 0 25px 0; padding: 20px 0 0 0; clear: both; overflow: hidden; line-height: 13px; }
+.pagination span, .pagination a { display: block; float: left; width: auto; margin: 2px 3px 2px 0; padding: 14px 18px; border: 1px solid $border-color; color: $wb-550; background: $wb-150; text-decoration: none; text-decoration: none; }
+.pagination a:hover { color: $white; background: $red-200; }
+.pagination .current { padding: 14px 18px; border: 1px solid $red-200; color: $white; background: $red-200; }
+.pagination a.last { color: $wb-550; background: $wb-150; }
+.pagination a.last:hover { color: $wb-550; background: $white; }
+
+/* By lines */
+.singlebylines { margin-bottom: 25px; padding: 5px 0px 0px 22px; overflow: hidden; color: $wb-700; font-size: 12px; }
+.singlebylines time.entry-date, .singlebylines span.twitter, .singlebylines span.tag, .singlebylines span.vcard { position: relative; }
+.singlebylines span.vcard::before { content: ''; position: relative; position: absolute; top: -2px; left: -22px; width: 12px; height: 14px; background: url($spritesheet) no-repeat -301px -70px; }
+.singlebylines time.entry-date::before { content: ''; position: relative; position: absolute; top: -2px; left: -20px; width: 14px; height: 14px; background: url($spritesheet) no-repeat -315px -70px; }
+.singlebylines span.twitter::before { content: ' '; position: relative; position: absolute; top: -2px; left: -20px; width: 15px; height: 12px; background: url($spritesheet) no-repeat -332px -70px; }
+.singlebylines span.tag::before { content: ''; position: relative; position: absolute; top: -2px; left: -20px; width: 13px; height: 13px; background: url($spritesheet) no-repeat -347px -70px; }
+.singlebylines .col, .sharearea .col { position: unset; float: left; width: unset; max-width: unset; min-height: unset; margin-right: 15px; padding: 8px 0 3px; }
+.sharearea .col.col1 { padding-top: 12px; }
+.sharearea .col.col3 { padding-top: 11px; }
+.singlebylines .col { margin-right: 36px; }
+
+.sharearea { padding: 1px 0; border-top: 1px dotted $border-color; border-bottom: 1px dotted $border-color; overflow: hidden; }
+.tagarea { margin-top: 10px; padding: 15px 0 0 0; border-top: 1px dotted $border-color; }
+.tagarea span.tags { font-family: $font-body; font-weight: bold; font-size: 13px; text-transform: uppercase; }
+.tagarea ul { margin: 4px 0 10px; }
+.tagarea li { display: inline-block; margin: 0 5px 5px 0; list-style: none; }
+.tagarea li a { padding: 6px 7px 6px; color: $white; background: $blue-600; font-size: 12px; text-decoration: none; }
+.tagarea li a:hover { background: $wb-550; }
+
+/*Related Posts*/
+.relatedposts { padding: 20px 0 30px; overflow: hidden; }
+.relatedposts h4 { margin-bottom: 10px; font-family: $font-body; font-weight: bold; font-size: 13px; text-transform: uppercase; }
+.relatedposts h5 { margin-bottom: 8px; font-family: $font-body; font-weight: bold; font-size: 13px; }
+.relatedposts h5 a { color: $red-200; text-decoration: none; }
+.relatedposts h5 a:hover { text-decoration: underline; }
+.related_left { float: left; width: 48%; }
+.related_right { float: right; width: 48%; }
+.postpreview { padding: 10px; border: 1px solid $wb-250; overflow: hidden; background: $wb-50; }
+.postpreview .thumbnail { position: relative; float: left; width: 60px; height: 60px; margin-right: 15px; }
+.postpreview .thumbnail img { display: block; width: 100%; height: 60px; }
+.relatedposts .articleinfo span { font-size: 12px; font-style: italic; }
+
+.general-info-table { display: none; margin-bottom: 10px; }
+
+.opinion-panel.like, .opinion-panel.dislike { position: relative; min-height: 90px; padding-left: 100px; }
+.opinion-panel.like::before, .opinion-panel.dislike:before { content: ""; position: absolute; top: 0px; left: 0px; width: 80px; height: 80px; background: url($spritesheet) no-repeat; background-position: 0 -160px; }
+.opinion-panel.dislike:before { background-position: 0px -78px; }
+
+/*Blog Pages */
+.posts-list {
+  margin-bottom: 12px;
+
+  .entry {
+    position:relative;
+    margin-bottom: 12px; padding: 18px; border: 1px solid $wb-250; overflow: hidden; background: $wb-50; font-size: 13px;
+    &:last-of-type { border-bottom:none; }
+    &:hover {
+      .img-full:after { background:linear-gradient(to bottom, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 0.8) 100%); }
+    }
+    .img-full { display:none; position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; background-size:cover; background-position:50% 50%; }
+    .img-full:after { position:absolute; top:0; left:0; z-index:2; height:100%; width:100%; content:''; background:linear-gradient(to bottom, rgba(19, 19, 19, 0.1) 0%,rgb(19, 19, 19) 94%); transition:all .5s ease; }
+    .mostrecent, .fullink { display: none; }
+    .img-thumb { position: relative; float: left; width: 220px; height: 140px; margin-right: 20px; overflow: hidden; }
+    .img-thumb img { display: block; width: 100%; height: auto; min-height: 140px;}
+    .pick-sport { position: absolute; z-index: 3; top: 10px; right: 10px; padding: 5px 14px; color: $white; background: #163860; font-weight: bold; text-align: center; text-transform: uppercase; box-shadow: 1px 1px 5px 0px #b3b3b3; }
+    h3 { margin-bottom: 4px; color: $blue-600; }
+    .content-wrap { overflow: hidden; }
+    .content-wrap p { margin-bottom: 10px; }
+    &.featured {
+      position: relative; height: 340px; margin-bottom: 30px; border: none;
+      &:hover {
+        .img-full:after { background: linear-gradient(to bottom, rgba(49, 49, 49, 0) 0%, rgb(19, 19, 19) 94%); }
+        .content-wrap .button-redbg { background: #c23709; }
+      }
+      .img-thumb img, .postmeta { display: none; }
+      .img-full { display: block; position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background-position: 20% 20%; background-size: cover; }
+      .img-full:after { content: ''; position: absolute; z-index: 2; top: 0; left: 0; width: 100%; height: 100%; background: url('/overlay.png') repeat-x bottom; }
+      .mostrecent { display: block; position: absolute; z-index: 3; top: 0; left: 0; width: 120px; padding: 8px; color: $white; background: #029e6f; font-weight: bold; text-align: center; text-transform: uppercase; }
+      .img-thumb { position: static; }
+      .pick-sport { top: 20px; right: 20px; }
+      .content-wrap { position: absolute; z-index: 3; right: 0; bottom: 0; left: 0; padding: 0 20px 20px 20px; color: $white; font-size: 1.2em; }
+      .content-wrap h3 { margin-bottom: 8px; font-size: 1.4em; text-shadow: 1px 2px $black;}
+      .content-wrap h3 a { color: $white; text-decoration: none; }
+      .content-wrap p { margin: 0 140px 0 0; }
+      .content-wrap .button-redbg { position: absolute; right: 20px; bottom: 20px; }
+      .fullink { display: block; }
+    }
+
+    @include media($break-xs) {
+      .img-thumb { float: none; margin: 0 auto 15px; }
+      &.featured { height: 320px; margin-bottom: 15px; }
+      &.featured .content-wrap p { margin: 0 0 10px 0; }
+      &.featured .content-wrap .button-redbg { position: static; margin: 0 auto; }
+    }
+  }
+
+  &.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: initial;
+
+    .entry {
+      display:flex;
+      flex: 1 1 30%;
+      height: 180px;
+      margin-right: 12px;
+      align-items:center;
+      padding:12px;
+      border:none;
+
+      &:last-child, &:nth-child(3n) {
+        margin-right: initial;
+      }
+    }
+
+    .img-full {
+      display: block; position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; background-size:cover; background-position:50% 50%;
+
+      &:after { position:absolute; top:0; left:0; z-index:2; height:100%; width:100%; content:''; background:rgba(19, 19, 19, 0.4); transition:all .5s ease; }
+    }
+    .entry:hover .img-full:after { background:rgba(19, 19, 19, 0.2); }
+    .img-thumb,
+    .postmeta .author,
+    .content,
+    .button-redbg, .pagination { display:none; }
+    .content-wrap { position:relative; z-index:3; width:100%; text-align:center; text-shadow:1px 2px #000; overflow: visible;}
+    h3 { margin-bottom:0; line-height:1.5em; transition:margin .5s ease; }
+    .entry:hover h3 { margin-bottom:15px; }
+    h3 a { color:#fff; font-weight:normal; text-decoration:none;}
+    .postmeta { visibility:hidden; opacity:0; position:absolute; bottom:-15px; left:0; right:0; z-index:3; text-align:center; transition:opacity .5s ease; }
+    .entry:hover .postmeta { visibility:visible; opacity:1; color:#fff; }
+    .fullink { display:block; position:absolute; top:0; right:0; bottom:0; left:0; z-index:4; text-decoration: none; }
+
+    @include media($break-sm) {
+      .entry {
+        flex: 1 1 40%;
+        &:nth-child(3n) {
+          margin-right: 12px;
+        }
+        &:nth-child(2n) {
+          margin-right: initial;
+        }
+      }
+    }
+
+    @include media($break-xs) {
+      display: block;
+
+      .entry {
+        margin: 0 0 12px;
+        &:nth-child(3n) {
+          margin-right: initial;
+        }
+      }
+    }
+  }
+}
+
+.postmeta { margin-bottom: 10px;font-size: 12px; font-style: italic; }
+
+.disclaimer { padding: 20px; border: 2px solid $blue-200; background: $blue-100;}
+.disclaimer p:last-child { margin: 0;}
+
+/* Author */
+.author-bio {
+  margin-bottom: 20px; padding: 15px; border: 1px solid $wb-250; overflow: hidden; background: $wb-100; font-size:0.9em;
+
+  figure { float: left; margin-right: 20px; }
+  figure img { display: block; width: 70px; height: auto; }
+  figure .last-update { margin-top: 10px; font-size:0.9em; }
+  figure .last-update span { display: block; }
+  .author-bio-summary {
+    overflow: hidden;
+
+    h3 { margin-bottom: 10px; }
+    ul { margin: 0; padding: 0; overflow: hidden; }
+    ul li { position: relative; float: left; padding: 0 0 0 21px; list-style: none; font-size:0.9em; }
+    ul li:not(:last-child) { margin: 0 20px 0 0;}
+    p { margin-bottom: 10px; }
+    ul li::before { content: ''; position: absolute; top: 2px; left: 0; height: 15px; background: url($spritesheet) -417px -58px; }
+    ul li.twitter::before { width: 19px; background: url($spritesheet) -396px -58px; }
+    ul li.bio::before { width: 14px; }
+    ul li.email::before { width: 23px; background: url($spritesheet) -371px -58px; }
+    ul li.twitter { padding: 0 0 0 27px; }
+    ul li.email { padding: 0 0 0 30px; }
+  }
+
+  @include media($break-xs) {
+    figure { float: none; width: 100%; margin: 0 auto 15px; text-align: center; }
+    figure img { width: 105px; margin: auto; }
+    figure .last-update span { display: inline-block; padding-left: 8px; }
+  }
+}

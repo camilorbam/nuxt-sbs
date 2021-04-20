@@ -1,0 +1,128 @@
+/* Payout Reports */
+.sportsreports { margin-bottom: 15px; overflow: hidden; color: $wb-700; font-size: 13px; font-weight: bold;}
+.reportblock { position: relative; float: left; width: 171px; height: 64px; margin: 0 10px 15px 0; padding: 24px 6px 0px 16px; border: 1px solid $wb-250;
+  background: #f8f8f8; background: -moz-linear-gradient(top, $white 0%, #f2f2f2 100%); background: -webkit-linear-gradient(top, $white 0%, #f2f2f2 100%); background: linear-gradient(to bottom, $white 0%, #f2f2f2 100%); line-height: 1em;}
+.reportblock:nth-child(4n) { margin-right: 0;}
+.reportblock:hover { color: #f3792e;}
+.reportblock a.fullblock { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0);}
+.lettergrade { vertical-align: middle; margin-right: 16px; font-family: Impact, Haettenschweiler, Franklin Gothic Bold; font-size: 28px;}
+.lettergrade.letter_a { color: #04b700;}
+.lettergrade.letter_b { color: #90c030;}
+.lettergrade.letter_c { color: #dea601;}
+.lettergrade.letter_d { color: #de1601;}
+h3.sportsreportsh3 { position: relative; margin-bottom: 20px; color: $wb-850; font-size: 18px; text-align: center; text-transform: uppercase;}
+h3.sportsreportsh3::before { content: ""; position: absolute; top: 4px; left: 0px; width: 250px; height: 13px; background: url('/heading_side.png') no-repeat;}
+h3.sportsreportsh3::after { content: ""; position: absolute; top: 4px; right: 0px; width: 250px; height: 13px; background: url('/heading_side.png') no-repeat;}
+
+/* Payment page */
+.deptable { border: 0;}
+.deptable tr th, .deptable thead th { padding: 9px 24px; border: 1px solid #495562; border-bottom: 2px solid #363f48; color: $white; background: $blue-700; font-size: 12px; font-weight: bold; line-height: 18px;}
+.deptable tr td { padding: 6px 24px; border: 1px solid #d9d9d9; color: #595959; background: $white; font-size: 12px; line-height: 1.3em;}
+.deptable tr:nth-child(odd) td { background: #f6f6f6;}
+h4.poupdate { display: inline-block; margin-bottom: 15px; padding: 4px; color: rgb(83, 182, 40); background: rgb(238, 238, 238); font-size: 18px; font-style: italic;}
+
+.freepayout { margin-bottom: 25px; padding: 12px; border: 1px solid #e0e0e0; color: #595959; background: #e6e6e6; text-align: center;}
+
+.toppayhead {
+  display: flex;
+  margin: -15px -15px 15px -15px;
+}
+.toppayhead p { margin: 0;}
+
+.toppayhead_left {
+  flex-basis: 100%;
+  padding: 10px;
+  background: #005bad;
+
+  h2 {
+    float: left;
+    margin: 0;
+    padding-top: 7px;
+    color: $white;
+
+    a {
+      color: $white;
+
+      &:hover { text-decoration: none;}
+    }
+  }
+
+  span {
+    display: block;
+    float: right;
+    padding-top: 10px;
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+}
+
+.updownarrow {
+  flex: 0 0 60px;
+  margin: 0 1px;
+  background-color: #04b700;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+
+  &.uppayout { background-image: url('/arrow-up.png');}
+  &.downpayout { background-image: url('/arrow-down.png');}
+  &.equalpayout { background-image: url('/equal.png');}
+}
+
+.updownarrow.arrow_a, .thismonth_a { background-color: #04b700;}
+.updownarrow.arrow_b, .thismonth_b { background-color: #90c030;}
+.updownarrow.arrow_c, .thismonth_c { background-color: #dea601;}
+.updownarrow.arrow_d, .thismonth_d { background-color: #de1601;}
+
+.monthgrades {
+  flex: 0 0 145px;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  font-size: 12px;
+
+  & > div {
+    flex: 1;
+    padding: 0 12px;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+  }
+}
+
+.updatereport { height: 211px; margin: 0 auto 20px; padding: 20px 20px 20px 190px; color: $white; background: #27435e url('/sbs_update_bg.jpg') no-repeat center top;}
+.updatereport p { line-height: 1.4em;}
+.updatereport h4 { margin-bottom: 10px; color: #f3cf3f;}
+
+.payment-grade-ranking { display: table;width: 100%; margin-bottom: 15px;padding: 15px; border: 1px solid $wb-250; overflow: hidden; background: $wb-50;}
+.payment-grade-ranking .col1 { display: table-cell; vertical-align: top; width: 65px; padding: 4px 15px 0 0; text-align: center;}
+.payment-grade-ranking .col1 p { margin: 0;}
+.payment-grade-ranking .col2 { display: table-cell; vertical-align: top;width: 155px; padding-right: 15px; text-align: center;}
+.payment-grade-ranking .col2 img { display: block;width: 100%; max-width: 140px; height: auto;}
+.payment-grade-ranking .col3 { display: table-cell;vertical-align: top; padding-right: 15px; font-size: .9em;}
+.payment-grade-ranking .col4 { display: table-cell;vertical-align: middle; width: 120px; text-align: center;}
+.payment-grade-ranking .payment-grade { width: 30px; height: 30px; margin: 0 auto 6px; -moz-border-radius: 50%; -webkit-border-radius: 50%;border-radius: 50%; color: $white; font-size: 14px;font-weight: bold; line-height: 30px; text-align: center; }
+.payment-grade-ranking .col1 span { display: block; font-family: $font-body; font-size: 10px; font-weight: bold; line-height: 1.2em;text-transform: uppercase; }
+
+.payment-report { margin-bottom: 25px; border: 1px solid $wb-400;}
+.payment-report .top-panel { overflow: hidden; }
+.payment-report .logo { float: left;width: 28%;}
+.payment-report .logo img { display: block;width: 100%; height: 110px;}
+.payment-report .data { float: left;width: 72%;border-left: 1px solid $wb-400; font-size: 12px;}
+.payment-report .data span { font-weight: bold;}
+.payment-report .data-row { position: relative;padding: 0; border-bottom: 1px solid $wb-400;overflow: hidden; text-align: center;}
+.payment-report .data-row:first-child { padding: 6px 10px; text-transform: uppercase; }
+.payment-report .data-row p { display: inline-block; margin: 0;}
+.payment-report .payment-grade { display: inline-block; width: 30px; height: 30px; margin: 0 auto 6px; margin-right: 2px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;color: $white; font-size: 14px; font-weight: bold;line-height: 30px; text-align: center; }
+.payment-report .data-row:last-child { border-bottom: 1px solid $wb-400; overflow: hidden;}
+.payment-report .col { position: unset; float: left; width: unset; max-width: unset; min-height: unset; padding: 5px 5px 6px; border-right: 1px solid $wb-400;font-size: 12px; text-align: center;}
+.payment-report .col.col33 { width: 33%;}
+.payment-report .col.col50 { width: 50%; }
+.payment-report .data-row .col:last-child { border-right: none}
+.payment-report .description { padding: 20px 20px 10px; font-size: 13px;}
+
+

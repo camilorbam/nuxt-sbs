@@ -1,0 +1,148 @@
+/*Article Table of Content */
+
+.more-about {
+  margin-bottom: 25px; padding: 15px 20px; border: 1px solid $wb-450; clear: both; overflow: hidden; background: $wb-100;
+
+  h4 { margin: 0 0 20px; padding: 0 0 12px; border-bottom: 1px dashed $border-color; color: $blue-800; font-size: 1.2em; text-align: center; text-transform: uppercase; }
+  ul { margin: 0; padding: 0; overflow: hidden;}
+  li { position: relative; float: left; width: 50%; margin: 0 0 5px; padding: 0 10px 0 20px; list-style: none; font-size:0.86em; }
+  li::before { content: ""; position: absolute; top: 6px; left: 0px; width: 6px; height: 10px; background: url($spritesheet) no-repeat; background-position: -1px -19px; }
+  &.football-betting { padding: 15px 20px 15px 190px; border: 1px solid #c1ddf3; background: $wb-100 url('/footballbetting_toc.png') no-repeat; background-size: cover; }
+  &.deposit-withdrawals { padding: 15px 20px 15px 160px; background: $wb-100 url('/payouts-bg.png') no-repeat 20px 30px; }
+  h4 { border-bottom: 1px dashed $blue-800; text-align: left; }
+  &.football-betting li::before { top: 6px; left: 0px; width: 7px; height: 8px; background: url($spritesheet) -132px -18px; }
+  &.style2 { position: relative; padding: 15px 20px 15px 190px; border: 1px solid #c1ddf3; background: #eff8fe; background: -moz-linear-gradient(top, $blue-100 0%, $white 100%); background: -webkit-linear-gradient(top, $blue-100 0%, $white 100%); background: linear-gradient(to bottom, $blue-100 0%, $white 100%); }
+  &.greenbg { border: 1px solid #a7ff84; background: #eaffe1; background: -moz-linear-gradient(top, #ddffcf 0%, $white 100%); background: -webkit-linear-gradient(top, #ddffcf 0%, $white 100%); background: linear-gradient(to bottom, #ddffcf 0%, $white 100%); }
+  &.bluebg { border: 1px solid #c1ddf3; background: #eff8fe;background: -moz-linear-gradient(top, $blue-100 0%, $white 100%); background: -webkit-linear-gradient(top, $blue-100 0%, $white 100%); background: linear-gradient(to bottom, $blue-100 0%, $white 100%);}
+  &.orangebg { border: 1px solid #ffccae;background: #fff4ee;background: -moz-linear-gradient(top, #ffebdf 0%, $white 100%); background: -webkit-linear-gradient(top, #ffebdf 0%, $white 100%); background: linear-gradient(to bottom, #ffebdf 0%, $white 100%); }
+  &.style2 li::before { top: 8px; left: 0px; width: 7px; height: 8px; background: url($spritesheet) -132px -18px; }
+  &.style2 img { position: absolute; top: 50px; left: 25px; }
+
+  @include media($break-md) {
+    &.football-betting { padding: 15px; border: 1px solid #c1ddf3; background: #e1eaf4; }
+    &.style2 { padding: 15px; }
+    &.style2 img { display: none; }
+  }
+  @include media($break-xs) {
+    li { float: none; width: 100%; margin: 8px 0 9px; padding: 0; border-radius: 5px; background: #17375f; background: linear-gradient(to bottom, #6293e7 0%, #2966a4 100%); cursor: pointer; }
+    &.style2, & { padding: 9px; }
+    &.style2 li::before, li::before { display: none }
+    li a { display: block; width: 100%; height: 100%; padding: 9px 9px 8px; color: $white; text-decoration: none; }
+  }
+}
+
+.toc {
+  position: relative;float: right;z-index: 2; width: 230px; margin: 0 0 15px 20px; padding: 10px;border: 1px solid $wb-250;
+
+  .imagearea { display: block; height: 110px; margin-bottom: 10px; padding: 12px; background: url('/nfl_toc.jpg') no-repeat; background-size: 100%;}
+  &.nfl .imagearea { background: url('/nfl_toc.jpg') no-repeat;}
+  &.mlb .imagearea { background: url('/mlb_toc.jpg') no-repeat; }
+  &.nba .imagearea { background: url('/nba_toc.jpg') no-repeat; }
+  &.nhl .imagearea { background: url('/hockey-toc.jpg') no-repeat; }
+  &.ncaaf .imagearea { background: url('/ncaaf_toc.jpg') no-repeat; }
+  &.ncaabb .imagearea { background: url('/ncaabb-toc.jpg') no-repeat; }
+  &.faq .imagearea { background: url('/toc_faq.png') no-repeat; }
+  .imagearea h5 { color: $white; font-family: $font-body; font-size: 13px; font-weight: bold; text-shadow: 1px 1px 1px $black; text-transform: uppercase;}
+  .imagearea h5 span { color: #fee801; font-size: 22px;font-weight: bold;}
+  ul { margin: 0 0 0 20px;}
+  li { position: relative; margin: 0 0 5px; padding: 0 0 0 2px; list-style: outside; color: #3e8cc0; font-size: 13px;}
+  &.anchorlinks { background: $white;box-shadow: 0 0 10px -8px $wb-750;}
+  &.anchorlinks h5 { margin-bottom: 10px;padding: 5px; color: $white;background: $blue-800;text-align: center;text-transform: uppercase;}
+  p { margin: 0}
+  &.borderleft { width: 250px; padding: 0 0 0 15px;border: 0; border-left: 1px solid $wb-250;}
+  img { display: block; max-width: 100%;margin: 0 auto 15px; }
+  ol { margin: 0 0 0 20px;}
+  ol li { list-style: outside decimal; color: $blue-600;}
+
+  @include media($break-sm) {
+    ul { margin: 0; list-style: none; }
+    li { float: none; width: 100%; margin: 8px 0 9px; padding: 0; border-radius: 5px; list-style: none; background: #1f92d6; cursor: pointer; }
+    li:hover { background: #1f92d6; }
+    li a { display: block; width: 100%; height: 100%; padding: 9px 9px 8px; color: $white; text-decoration: none; }
+  }
+}
+
+.toc.blocks {
+  float: none; width: 100%; margin: 0 0 15px; padding: 0; border: 0;
+
+  ul { margin: 0; }
+  li { display: inline-block; max-width: 100%; margin: 0 5px 5px 0; padding: 5px 8px 3px; color: $white; background: $blue-600; text-align: center; cursor: pointer; }
+  li:hover { background: #006699; }
+  li a { color: $white; text-decoration: none; }
+  li:before { display: none; }
+}
+
+.toc-cards { display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; width: 100%; margin: 5px 0 15px 0; text-align: center; }
+.toc-card {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; width: 185px; margin: 0px 10px 10px; padding: 10px; border-radius: 5px; color: $black; background-color: $wb-100; text-decoration: none; box-shadow: 2px 3px 10px $border-color;
+
+  &:hover { color: $black; background-color: #88b2ec; }
+  .card-img { display: flex; flex-shrink: 0; justify-content: center; align-items: center; width: 150px; height: 125px; margin: 0; background: linear-gradient(45deg, #2e568a 0%, #294571 19%, #2d4e82 69%, #447fbb 100%); }
+  .card-img:before { content: ''; position: absolute; z-index: 9; width: 140px; height: 115px; background: linear-gradient(60deg, #5ab9dd 0%, #3c4d99 50%, #7ccfea 100%); }
+  .card-img:after { content: ''; position: absolute; z-index: 10; width: 136px; height: 111px; background: linear-gradient(45deg, #2e568a 0%, #294571 19%, #2d4e82 69%, #447fbb 100%); }
+  .card-img > img { z-index: 11; max-width: 75px; max-height: 75px; }
+  .card-title { display: block; flex-grow: 1; margin: 15px 5px 5px; color: $blue-800; font-family: $font-title; font-size: 16px; font-weight: 600; line-height: 1.2em; word-wrap: break-word; }
+
+  @include media(870px) {
+    flex-direction: row; width: 250px;
+
+    .card-img { width: 100px; height: 100px; }
+    .card-img:before { width: 90px; height: 90px; }
+    .card-img:after { width: 86px; height: 86px; }
+    .card-img > img { max-width: 50px; max-height: 50px; }
+  }
+  @include media($break-sm) {
+    flex-direction: row; width: 180px;
+
+    .card-img { width: 60px; height: 60px; }
+    .card-img:before { width: 50px; height: 50px; }
+    .card-img:after { width: 48px; height: 48px; }
+    .card-img > img { max-width: 35px; max-height: 35px; }
+  }
+}
+
+.country-toc {
+  float: right;width: 230px; margin: 0 0 15px 20px;
+
+  .flag { display: block; position: relative; height: 130px; padding: 10px; border: 1px solid $wb-250;border-bottom: 0; overflow: hidden;}
+  .flag h5 { position: absolute; bottom: 20px; left: 20px; margin: 0; color: $white; font-family: $font-title; font-size: 14px; text-shadow: 1px 1px 1px $black; text-transform: uppercase;}
+  .flag img { width: 100%; height: 110px;}
+  table th { width: 55%;padding: 5px 10px;border-right: 1px solid $wb-300; border-bottom: 1px solid $wb-300; color: $blue-800; color: $black;background: $wb-100;font-weight: normal;}
+  table td { padding: 5px 10px;background: $wb-100;}
+}
+
+.steps-toc {
+  position: relative; margin-bottom: 20px;
+
+  &::after { clear: both;}
+  &:before { content: ''; position: absolute;right: 110px; bottom: 40px; width: 71px; height: 77px;background: url($spritesheet) -445px -866px;}
+
+  @include media($break-md) {
+    &:before { display: none; }
+  }
+}
+
+a.steps-toc-item {
+  display: inline-block; position: relative; vertical-align: top; width: 173px;height: 118px; margin: 0 1px 1px 0; padding: 55px 10px 10px; background: #20608c url('/steps_bg.jpg') no-repeat; background-size: cover; text-decoration: none;
+
+  &:hover { background: #20608c;}
+  &::after { content: ''; position: absolute; top: 20px; right: -11px;width: 11px; height: 21px;background: url($spritesheet) -90px -993px;}
+  span.stepno { display: block; color: #ffcc33;font-family: $font-title; font-size: 16px; line-height: 1.2em; text-transform: uppercase;}
+  span.stepinfo { display: block; color: #cee2f8;font-family: $font-body; font-weight: bold; font-size: 12px; line-height: 1.1em; text-transform: uppercase;}
+  &.stepnum1 { z-index: 7}
+  &.stepnum2 { z-index: 6}
+  &.stepnum3 { z-index: 5}
+  &.stepnum4 { z-index: 4}
+  &.stepnum5 { z-index: 3}
+  &.stepnum6 { z-index: 2}
+  &.stepnum7 { z-index: 1}
+  &.stepnum1::before { content: ''; position: absolute; top: 10px; right: 10px;width: 61px; height: 54px;background: url($spritesheet) 0px -935px;}
+  &.stepnum2::before { content: ''; position: absolute; top: 10px; right: 10px;width: 61px; height: 52px;background: url($spritesheet) -64px -935px;}
+  &.stepnum3::before { content: ''; position: absolute; top: 5px; right: 10px;width: 72px; height: 67px;background: url($spritesheet) -128px -935px;}
+  &.stepnum4::before { content: ''; position: absolute; top: 10px; right: 15px;width: 47px; height: 56px;background: url($spritesheet) -203px -935px;}
+  &.stepnum5::before { content: ''; position: absolute; top: 10px; right: 10px;width: 60px; height: 58px;background: url($spritesheet) -253px -935px;}
+  &.stepnum6::before { content: ''; position: absolute; top: 10px; right: 15px;width: 71px; height: 53px;background: url($spritesheet) -316px -934px;}
+  &.stepnum7::before { content: ''; position: absolute; top: 10px; right: 10px;width: 88px; height: 52px;background: url($spritesheet) 0px -992px;}
+  &:hover span.stepinfo { text-decoration: underline;}
+  &.stepnum7::after { top: 70px; }
+}

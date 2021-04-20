@@ -33,7 +33,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/mixins.scss"],
+  css: ["~/assets/mixins.scss","~/assets/sass/main.scss"],
 
   loading: { color: "#fff" },
 

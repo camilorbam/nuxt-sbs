@@ -1,0 +1,15 @@
+#page-header { height: 145px; }
+#header-top {
+  height: 103px;
+  padding: 20px 0px 0px 0px;
+}
+#header-logo { float: left; margin-right: 20px; padding-right: 20px; border-right: solid 1px #43668d; }
+#header-desc { float: left; color: $white; font-family: $font-title; font-size: 14px; text-transform: uppercase; }
+#header-desc span { display: block; color: #29d9b9; }
+.top-section { overflow: hidden; }
+.top-section pre { margin: 0; }
+
+.subheader-grey { padding: 10px 0px; color: #424242; background-color: #e0e0e0; font-family: $font-body; font-size: 13px; font-weight: bold; text-align: center;
+  text-align: center; text-transform: uppercase;}
+.subheader-grey ul { display: table; width: 100%; }
+.subheader-grey ul li { display: table-cell; vertical-align: middle; list-style: none; }

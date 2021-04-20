@@ -1,0 +1,21 @@
+.newsletter-370 { float: right; width: 370px;margin: 0 0 10px 20px;}
+.newsletter-370 .optinbox .optin-text { float: none; width: inherit; margin-bottom: 10px; padding-left: 80px; }
+.newsletter-370 .optinbox .optin-form { float: none; width: 100%;}
+
+/* About */
+.bannercontact { margin-bottom: 20px; padding: 20px 20% 20px 20px; color: $white; background: url('/banner_contact.jpg') no-repeat; background-size: 100% 100%; }
+.bannercontact span.contactus { display: block; position: relative; padding: 10px 0 0 32px; color: #29d9b9; }
+.bannercontact span.contactus:before { content: ''; position: absolute; top: 14px; left: 0px; width: 24px; height: 16px;background: url($spritesheet) no-repeat -123px -94px; }
+
+.ourteam { margin-bottom: 20px; padding: 20px; border: 1px solid $wb-250; background: $wb-50; }
+.ourteam-intro { margin-bottom: 20px; overflow: hidden; }
+.ourteam-intro-left { float: left; margin-right: 20px; }
+.ourteam-intro-right { overflow: hidden; }
+.ourteam-intro-right h4 { margin: 0; padding-top: 10px; font-family: $font-title; font-size: 20px; }
+.ourteam-intro-right span.twittercontact { display: block; position: relative; padding: 10px 0 0 26px; color: #29d9b9; }
+.ourteam-intro-right span.twittercontact:before { content: ''; position: absolute; top: 14px; left: 0px; width: 20px; height: 20px;background: url($spritesheet) no-repeat -208px -63px; }
+.othercontact-wrap { margin-bottom: 20px; overflow: hidden; }
+.other-contact { position: relative;float: left; width: 49%; padding: 12px 12px 12px 70px; border: 2px solid $blue-200; color: $blue-600; background: $blue-100; }
+.other-contact:before { content: '';position: absolute; top: 19px; left: 20px; width: 29px; height: 35px;background: url($spritesheet) no-repeat -339px -25px; }
+.other-contact.other-contact-right { float: right; }
+.other-contact.other-contact-right:before { width: 31px; height: 31px; background: url($spritesheet) no-repeat -370px -25px; }

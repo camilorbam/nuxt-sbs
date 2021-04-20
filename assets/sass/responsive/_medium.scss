@@ -1,0 +1,140 @@
+@include media($break-md) {
+  #header-top { height: auto; padding: 18px 70px; overflow: hidden; }
+  .js ul#header-nav { display: none; }
+  .js .selectnav { display: block; }
+  .js .selectarea .selectnav { display: block; width: 100%; height: 34px; padding: 5px; border: 0; border-radius: 0; color: $wb-850; background: transparent; font-size: 16px; font-weight: bold; text-transform: uppercase; cursor: pointer; -webkit-appearance: none; }
+  .js .selectarea { height: 36px; border: 1px solid $black; overflow: hidden; overflow: hidden; background: url('/dropicon.png') no-repeat 98% center $wb-200; cursor: pointer; }
+  .js .selectarea select option { color: black; background: $white; }
+  .review-infobox-left { float: none; width: 100%; }
+  .review-infobox-right { float: none; width: 100%; padding-left: 0px; }
+  .review-mobile-display { display: block; }
+  .review-infobox-left .review-logo { display: none; }
+  .review-infobox-left .review-signup-button { margin-top: 10px; }
+  .large-network-item, .large-network-item:nth-child(2n+1), .large-network-item:nth-child(2n) { float: none;width: 100%; padding: 0 0px 20px 0; }
+  .other-contact, .other-contact.other-contact-right { float: none;width: 100%; margin-bottom: 5px; }
+
+  .review-table-review { display: block; width: 100%; margin-bottom: 5px; }
+  .review-table-play { display: block; width: 100%; }
+
+  .payment-grade-ranking { display: block; }
+  .payment-grade-ranking .col1, .payment-grade-ranking .col2 { display: block; float: left; width: 50%; }
+  .payment-grade-ranking .col2 { padding-right: 0px; }
+  .payment-grade-ranking .col3, .payment-grade-ranking .col4 { display: block; width: 100%; padding: 15px 0; clear: both; }
+  .payment-grade-ranking .col4 { padding: 0;}
+  a.gray-link-button { display: block; height: 45px; font-size: 13px; line-height: 45px; }
+  .sidebar { display: block; width: 100%; }
+  #content-container { padding: 15px 12px; }
+  .headercontainer { padding: 10px 12px; }
+
+  .placebetson .honest img { max-width: 100%; height: auto; }
+
+  .payment-table-top .mindep, .payment-table-row .mindep, .payment-table-top .maxdep, .payment-table-row .maxdep { display: none; }
+  .payment-table-top .features, .payment-table-row .features { width: 39%; }
+  .payment-table-top .name, .payment-table-row .name { width: 20%; }
+
+  .general-info-table { display: block; }
+  .widget_reviewgeneralinfo_widget { display: none; }
+
+  .network-timeline-boxright .timeline-datearea, .network-timeline-boxleft .timeline-datearea { height: inherit; }
+  .network-timeline-boxleft .timeline-datearea { padding: 0 25px 10px 0px; }
+  .network-timeline-boxright .timeline-datearea { padding: 0 0px 10px 25px; }
+
+  .deposit-option-listing-info { float: none; width: 100%; margin-bottom: 20px; }
+  .deposit-option-list-items { float: none; width: 100%; }
+  .payment-report .logo img { height: auto; }
+  .review-scores-label-right { right: 10px; }
+
+  .review-infobox-right.reviewtest1 .review-safty-scores-container { float: none; width: 100%; margin-bottom: 10px; }
+  .review-infobox-right.reviewtest1 .review-rating-top { float: none; width: 100%; }
+  .review-infobox-right.reviewtest1 ul.review-generalinfo-list li { width: 49.5%; }
+
+  .widereview .col3 .button-redbg { width: 95%; }
+  .widepros .col1, .widepros .col2 { float: none; width: 100%; }
+  .widepros .col1, .widepros .review-con-list.list-redbg-x { margin-bottom: 0; padding-bottom: 15px; }
+
+  .widereview .col1 { width: 62%;}
+  .widereview h1 { padding-top: 0px; font-size: 18px; }
+  .widereview .col2 { width: 38%; }
+  .bonusamt { font-size: 18px; line-height: 1em; }
+
+  .updatereport { height: inherit; margin: 0 auto 20px; padding: 20px; background: #27435e; }
+
+  .placebetson { padding: 15px; }
+  .placebetson .toparea { padding: 0 0 5px 0; }
+  .placebetson .toparea::after { display: none; }
+
+  #page-header { height: inherit; }
+
+  .optinbox .optin-text { float: none; width: 100%; padding: 0 0 15px 100px; }
+  .optinbox .optin-form { float: none; width: 100%; }
+  .optinbox input.submit { width: 100%;}
+
+  figure.alignright,
+  figure.alignleft,
+  img.alignright,
+  img.alignleft { max-width: 60%; height: auto; }
+
+  .single_cta a.cta-button { padding: 13px 110px 8px 15px; }
+
+  .vegas-sportsbook .sportsbook-info { margin-right: 15px; }
+
+  h4.topranked::before { display: none; }
+}
+
+@include media(775px) {
+  .updatereport { height: inherit; margin: 0 auto 20px; padding: 20px; background: #27435e; }
+
+  #footer-logo { display: none; }
+  #footer-widget-area1 { width: 50%; padding-left: 20px; }
+  #footer-widget-area2 { width: 50%; }
+  #footer-widgets { padding-bottom: 15px; }
+
+  .topoperators .title { padding: 15px 5px; line-height: 1; letter-spacing: .1px; }
+  .tpmgt-op .rating { padding: 10px 0px; }
+
+  .payout-list a { width: 47%; margin: 10px 1.5%; }
+  ul.mission-table li { width: 50%; height: 330px; }
+  a.header-icon { display: none; }
+
+  .show-until-775 { display: block; }
+}
+
+@include media(700px) {
+  .page-content img { height: auto; }
+
+  #footer-widget-area1 { width: 50%; padding-left: 20px; }
+  #footer-widget-area2 { width: 50%; }
+  .review-mobile-display { display: none; }
+  .review-infobox-left .review-logo { display: block; }
+  .review-infobox-left .review-signup-button { margin-top: 0px; }
+  .review-infobox-left { float: left; width: 35%; }
+  .review-infobox-right { float: right; width: 65%; padding-left: 20px; }
+  .review-table-review { display: table-cell; width: 25%; margin-bottom: 0px; }
+  .review-table-play { display: table-cell; width: 25%; }
+  .failed-site-top-left { width: 25%; }
+  .failed-site-top-right { width: 75%; }
+  .failed-grave-inner ul li { width: 25%; }
+  a.tooltip { display: none; }
+  .review-scores-label-right { top: -24px; right: 5px; }
+  .newsletter-370 { float: none; width: 100%; margin: 0 0 20px; }
+
+  .widereview .col2 { float: none; width: 270px; height: inherit; margin: 0 auto; padding: 10px; background:none; }
+  .widereview .col1 { float: none; width: 100%; height: inherit; padding: 15px;}
+  .widereview .col1 figure { float: none; width: 200px; margin: 0 auto; }
+  .widereview .col1 .title { float: none; width: 100%; padding-left: 0; text-align: center; }
+
+  .vegas-sportsbook .sportsbook-content table td { display: block; width: 100%; }
+
+  .awardsites h3.introtitle { padding: 15px 10px 8px 82px; }
+  .awardsites h3.introtitle img { display: block; position: relative; float: none; top: unset; bottom: unset; left: unset; margin: 0 0 10px 0; }
+
+  .calculator.no-vig { width: 85% }
+
+  img.trustimage { margin: 0 auto 10px; }
+  h3.home-title, h1.home-title, h3.home-subtitle { padding: 0; text-align: center }
+  ul.greencheck.home-intro { margin: 0 0 20px 18px; }
+
+  ul.otherbetting.fourcolumns li.otherbets { max-width: 32%; margin: 0 2% 2% 0; }
+  ul.otherbetting.fourcolumns li.otherbets:nth-child(4n) { margin-right: 2%; }
+  ul.otherbetting.fourcolumns li.otherbets:nth-child(3n) { margin: 0 0 2% 0; }
+}

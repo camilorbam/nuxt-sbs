@@ -1,0 +1,47 @@
+@import 'abstracts/variables';
+/*!
+Theme Name: SBS 2017
+Theme URI: http://www.safestbettingsites.com/
+Description: This is a theme specifically built for Safest Betting Sites
+Version: #{$version}
+*/
+
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/layout';
+@import 'base/header';
+@import 'base/navigation';
+@import 'base/footer';
+@import 'base/generics';
+@import 'base/lists';
+@import 'base/tables';
+
+@import 'components/headings';
+@import 'components/buttons';
+@import 'components/post';
+@import 'components/forms';
+@import 'components/topoperators';
+@import 'components/ctas';
+@import 'components/tocs';
+@import 'components/media';
+@import 'components/misc';
+@import 'components/comments';
+@import 'components/vendor-extensions';
+
+@import 'vendor/bootstrap-grid';
+@import 'vendor/flags';
+
+@import 'pages/about-us';
+@import 'pages/strategy';
+@import 'pages/home';
+@import 'pages/other-pages';
+@import 'pages/sports-betting';
+@import 'pages/international';
+
+@import 'unknown';
+
+@import 'responsive/large';
+@import 'responsive/medium';
+@import 'responsive/small';

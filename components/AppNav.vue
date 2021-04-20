@@ -5,7 +5,7 @@
         <NuxtLink exact to="/">SBS </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/">About</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -86,17 +86,7 @@
     font-size: 13px;
     text-decoration: none;
   }
-  // ul.sub-menu a::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0px;
-  //   left: 0px;
-  //   width: 5px;
-  //   height: 7px;
-  //   margin: 15px 0px 0px 10px;
-  //   background: url($spritesheet) no-repeat;
-  //   background-position: -125px 0px;
-  // }
+
   ul.sub-menu a:hover {
     color: $blue-600;
     background: #f0f6ff;

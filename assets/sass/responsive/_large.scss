@@ -1,0 +1,33 @@
+@include media($break-lg) {
+  body.nfl-playoffs-theme { background: #17375f url('/sbs-bg-playoffs2.jpg') no-repeat center top; }
+  #footer-widget-area2 { padding-right: 20px; }
+  h3.sportsreportsh3::after { width: 120px; }
+  h3.sportsreportsh3::before { width: 120px; }
+
+  .reportblock:nth-child(4n), .reportblock { margin: 0 5px 15px 5px; }
+  .betonsports li { float: none; width: 100%; max-width: 350px; margin: 0 auto 15px; }
+  .betonsports li a { padding-left: 70px; }
+  .betonsports li:nth-child(odd) { margin: 0 auto 15px; }
+  .betonsports { padding: 20px 10px 0; clear: both; }
+
+  li.otherbets, li.otherbets:nth-child(3n) { margin: 0 10px 20px; }
+
+  .page-main.nosidebar li.otherbets:nth-child(5n) { margin-right: 12px; }
+  ul.betonblock li { width: 32%; margin: 0 2% 15px 0; }
+
+  .page-content ul.liststylegray li {
+    padding: 10px 10px 8px 23px;
+
+    &::before {
+      top: 15px;
+    }
+  }
+
+  .payment-table-row span.us-site { margin-bottom: 12px; }
+}
+
+@include media(870px) {
+  .review-strip-top-left { display: block; width: 100%; text-align: center; }
+  .review-strip-top-middle { display: block; width: 70%; min-height: 70px; margin: 5px auto; }
+  .review-strip-top-right { display: block; width: 100%; text-align: center; }
+}

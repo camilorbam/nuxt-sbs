@@ -1,0 +1,295 @@
+.page-content > ul,
+[class*=wp-block-] ul,
+[class*=col-] ul { margin: 0 0 20px 15px; }
+.page-content > ul li,
+ul.bluebullet li,
+.ezcol ul li,
+.review-summary ul li,
+[class*=wp-block-] > ul li,
+[class*=col-] ul li {
+  @extend %default-li;
+}
+
+.page-content > ol { padding: 0 0 20px 25px; }
+.page-content > ol li { margin-bottom: 8px; list-style: decimal outside; }
+
+ul.nostyle { margin: 0; padding: 0; }
+ul.nostyle li { margin: 0; padding: 0; list-style: none; }
+ul.nostyle li::before { background: none; }
+
+.dropdown-wrapper { position: relative; width: calc(100% - 40px); margin-bottom: 15px; padding: 0; clear: both; }
+.dropdown-list { position: relative; z-index: 98; width: 100%; min-height: 40px; max-height: 70vh; border: 1px solid #efe5e5; border-radius: 5px 0 5px 5px; clear: both; overflow-x: hidden; overflow-y: auto; background-color: $white; }
+.dropdown-list.close { border-radius: 5px 0 0 5px; }
+.dropdown-search, .dropdown-list .dd-li { display: block; float: none; width: 100%; height: 39px; min-height: 39px; margin: 0; padding: 5px; border-bottom: 1px solid $wb-400; text-align: left; cursor: pointer; }
+.dropdown-search + .dropdown-toggle + .dropdown-list.close:not(.selected) { display: none; }
+.dropdown-list {
+  .dd-li { display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; list-style: none; }
+  .dd-li a { display: inline-block; float: none; line-height: 0; }
+  .dd-li img { display: inline-block; float: none; }
+  .dd-li span { display: inline-block; float: none; }
+  .dd-li:not(.dd-selected):not(.dd-placeholder):hover { background-color: #f6faff; }
+  .dd-li.dd-selected { background-color: #d7e7ff; }
+  .dd-li.dd-placeholder { color: #757575; cursor: default; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+}
+.dropdown-search { display: block; z-index: 99; width: 100%; min-height: 40px; border: 1px solid $wb-400; border-radius: 5px 0 0 5px; cursor: initial; }
+.dropdown-toggle { display: flex; position: absolute; z-index: 100; top: 0; right: -40px; justify-content: center; align-items: center; width: 40px; min-width: 40px; max-width: 40px; height: 40px; min-height: 40px; max-height: 40px; border: 1px solid #efe5e5; border-radius: 0 5px 5px 0; background-color: #fafafa; cursor: pointer; }
+.dropdown-toggle:hover { background-color: #f6faff; }
+.triangle-down:before, .triangle-up:before { content: ''; display: inline-block; width: 0; height: 0; border-style: solid; }
+.triangle-down:before { border-width: 10px 10px 0 10px; border-color: #b6b7c1 transparent transparent transparent; }
+.triangle-down:hover:before { border-color: #585c77 transparent transparent transparent; }
+.triangle-up:before { border-width: 0 10px 10px 10px; border-color: transparent transparent #b6b7c1 transparent; }
+.triangle-up:hover:before { border-color: transparent transparent #585c77 transparent; }
+
+ul.bluebullet, .ezcol ul { margin: 0 0 8px; }
+ul.bluebullet.bulletmargin { margin-left: 10px; }
+ul.graybullet { margin: 0 0 8px; }
+ul.graybullet li { position: relative; margin: 0 0 8px; padding: 0 0 0 20px; list-style: none; }
+ul.graybullet li::before { content: ''; position: absolute; top: 7px; left: 0; width: 8px; height: 8px; background: url($spritesheet) no-repeat -46px -37px; }
+
+.page-content > ul.horizontal { margin: 0 0 8px; overflow: hidden; }
+.page-content > ul.horizontal li { display: inline-block; float: left; padding: 0 12px 0 13px; }
+
+.page-content ul.articlelist { overflow: hidden; margin: 0 0 10px; padding: 0;}
+.page-content .articlelist li { display: block; float: left; width: 48.5%; margin: 0 1.5% 12px 0; padding: 10px; border: 1px solid $wb-250; overflow: hidden; list-style: none; color: $wb-800; font-size: 0.8em; }
+.page-content .articlelist li::before { display: none; }
+.articlelist li p { margin: 0; color:$wb-800; }
+.articlelist li .thumbnail { position: relative; float: left; width: 70px; height: 70px; margin-right: 15px; overflow: hidden; }
+.articlelist li .thumbnail img { display: block; width: 100%; height: auto; min-height: 70px; }
+.articlelist li h5 { margin-bottom: 6px; color: $blue-600; }
+.articlelist li:hover h5 { color: $red-200; }
+.articlelist li a { text-decoration: none; }
+.page-content .articlelist li:nth-child(2n+3) { clear: both; }
+.page-content .articlelist li:nth-child(2n) { margin-right: 0; }
+
+.page-content ul.articlelist.highlights { margin-bottom: 0; padding: 0; border: none; border-radius: 4px; background: transparent; font-size: 0; }
+.page-content .articlelist.highlights li { display: inline-block; float: none; width: 48.5%; margin: 0 1.5% 12px 0; border: 1px solid #a3c6e9; border-radius: 4px;
+  background: #dce8f7; font-size: 13px; }
+.articlelist.highlights li .thumbnail { width: 80px; height: 80px; }
+.articlelist.highlights li .thumbnail img { min-height: 90px; }
+.articlelist.highlights li h5 { font-size: 15px; }
+
+/* Betting Hubs */
+ul.bethelp { margin: 0 0 20px; padding: 15px 15px 15px 40px; border: 2px solid #eadead; background: #fff9e0;}
+ul.bethelp.mlb { border: 2px solid #d7e6f0;background: $blue-100;}
+ul.bethelp li { position: relative; margin: 0 0 10px;padding: 0 0 0 20px; list-style: none; }
+ul.bethelp li::before { content: ''; position: absolute; top:3px; left: -10px;left: -10px; width:20px; height:20px; background: url($spritesheet); background-position: -84px -118px;}
+ul.bethelp li:last-child { margin: 0;}
+ul.bethelp.nfl li::before { top:5px; left:-8px; width: 16px; height:16px; background-position: -84px -118px; }
+ul.bethelp.mlb li::before { background-position: -84px -74px; }
+ul.bethelp.nba li::before { background-position: -85px -96px; }
+ul.bethelp.nhl li::before { background-position: -103px -118px; }
+
+ul.orangelist { margin: 0px 20px;}
+ul.orangelist li { margin-bottom: 12px; padding: 0 0 5px 45px; list-style: none; background: url('/checkmark_icon.png') top left no-repeat; line-height: 1.3em;}
+ul.orangelist li::before {content: none;}
+
+ol.counter {
+  padding: 10px 15px 15px;
+  counter-reset: section;
+
+  li {
+    position: relative;
+    min-height: 68px;
+    margin-bottom: 10px;
+    padding: 0px 0 10px 80px;
+    list-style: none;
+
+    &:not(:last-child) {
+      border-bottom: dotted 1px #bbbbbb;
+    }
+
+    &::before {
+      content: counters(section, ".") " ";
+      position: absolute;
+      top: 4px;
+      left: 0px;
+      width: 50px;
+      height: 50px;
+      margin: 0px;
+      padding: 0px;
+      counter-increment: section;
+      color: $white;
+      background: url($spritesheet) no-repeat -260px -450px;
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 50px;
+      text-align: center;
+      white-space: initial;
+    }
+  }
+
+  &.darkblue li::before { background: url($spritesheet) no-repeat -52px -242px; }
+
+  &.big {
+    padding: 10px 0px 15px;
+    li {
+      padding: 0px 0px 16px 0px;
+
+      &:not(:last-child) {
+        padding-bottom: 16px;
+        border-bottom: solid 1px #e5e6ea;
+        margin-bottom: 28px;
+      }
+
+      &::before {
+        float: left;
+        position: static;
+        margin-right: 14px;
+        border-radius: 2px;
+        background: #2980b9;
+        font-family: $font-title;
+        font-size: 30px;
+      }
+    }
+
+    h3, h4 {
+      padding-top: initial;
+      margin-bottom: 17px;
+      color: #2980b9;
+      font-size: 21px;
+      line-height: 50px;
+    }
+  }
+
+  p:last-child { margin: 0;}
+
+  h2, h3, h4, h5 { margin-bottom: 10px; padding-top: 3px; font-size: 16px;}
+}
+
+ul.list-greenbg-checked li { position: relative; margin: 0px 0px 10px 25px; list-style-type: none; line-height: 1.2; }
+ul.list-greenbg-checked li::before { content: ""; position: absolute; top: 2px; left: 0px; width: 14px; height: 14px; margin: 0px 0px 0px -25px; background: url($spritesheet) no-repeat; background-position: -139px 0px; }
+ul.greencheck { margin: 0 0 20px 92px;}
+ul.greencheck li { position: relative; padding-left: 13px; margin: 0px 0px 10px 10px; list-style-type: none; line-height: 1.2; }
+ul.greencheck li::before { content: ""; position: absolute; left: -10px; top: 1px; width: 16px;height: 16px; background: url($spritesheet) no-repeat; background-position: -95px -36px; }
+ul.greencheck.gray li::before { background-position: -95px -54px; }
+ul.list-redbg-x li { position: relative; margin: 0px 0px 10px 25px; list-style-type: none; line-height: 1.2; }
+ul.list-redbg-x li::before { content: ""; position: absolute; top: 2px; left: 0px; width: 15px; height: 14px; margin: 0px 0px 0px -25px; background: url($spritesheet) no-repeat; background-position: -155px 0px; }
+
+ul.list-grid-2column { border-top: solid 1px $wb-450; font-size: 13px; }
+ul.list-grid-2column li { display: table; width: 100%; border-bottom: solid 1px $wb-450; list-style: none; }
+ul.list-grid-2column li div { display: table-cell; width: 50%; padding: 7px 5px; }
+ul.normal-position-inside { padding: 0px 0px 10px 10px; list-style-position: inside; }
+ul.list-grey-arrow li { position: relative; margin: 0px 0px 10px 15px; list-style-type: none; line-height: 14px; }
+ul.list-grey-arrow li::before { content: ""; position: absolute; top: 3px; left: 0px; width: 8px; height: 10px; margin: 0px 0px 0px -15px; background: url($spritesheet) no-repeat; background-position: 0px -18px; }
+.page-content ul.liststylegray li { margin: 0;padding: 5px 10px 5px 23px;border: 1px solid $wb-350;border-top: 0;list-style: none;background: $wb-50; font-size: 13px;}
+.page-content ul.liststylegray li a { text-decoration: none;}
+.page-content ul.liststylegray li:first-child { border-top: 1px solid $wb-350;}
+.page-content ul.liststylegray li::before { top: 10px; left: 10px; }
+
+/* Review Grade List Shortcode*/
+ul.review-grade-list { margin: 15px 0px; padding: 15px 0px; border-top: dashed 1px $wb-550; border-bottom: dashed 1px $wb-550; clear: both; overflow: hidden; text-align: center; }
+ul.review-grade-list li { display: inline-block; width: 156px; margin: 0px 1% 10px 0px; list-style: none; }
+ul.review-grade-list li:hover { -khtml-opacity: 1; -moz-opacity: 0.5; opacity: 0.5; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); }
+ul.review-grade-list li .review-payment-grade { padding: 5px; color: $white; text-align: left; }
+ul.review-grade-list li .review-payment-grade span { padding-left: 5px; font-weight: bold; }
+
+ul.otherbetting { overflow: hidden;}
+li.otherbets { display: block; position: relative; float: left; width: 200px;height: 170px; margin: 0 32px 20px 0; list-style: none;}
+li.otherbets a.bettitle, li.otherbets div.bettitle { display: block; position: absolute; bottom: 0px; width: 100%;padding: 12px 5px; color: $white; background: rgba(12, 30, 51, .8); font-family: $font-title;font-size: 14px; text-align: center; text-decoration: none; }
+li.otherbets:nth-child(3n+0) { margin-right: 0;}
+li.otherbets:hover figure img { opacity: .50; filter: alpha(opacity=50); }
+ul.otherbetting.nonhover li.otherbets:hover figure img { opacity: 1; filter: alpha(opacity=100); }
+ul.otherbetting.fourcolumns li.otherbets { width: 162px; max-width: 23.5%; height: 128px; margin: 0 2% 2% 0; overflow: hidden; }
+ul.otherbetting.fourcolumns li.otherbets img { height: auto; }
+ul.otherbetting.fourcolumns li.otherbets:nth-child(3n) { margin: 0 2% 2% 0; }
+ul.otherbetting.fourcolumns li.otherbets:nth-child(4n) { margin-right: 0; }
+.page-main.nosidebar li.otherbets { float: left; width: 178px; height: 150px; margin: 0 12px 20px 0; }
+.page-main.nosidebar li.otherbets a.bettitle, .page-main.nosidebar li.otherbets div.bettitle { padding: 12px 10px 7px; line-height: 1.2em; }
+.page-main.nosidebar li.otherbets img { height: auto; min-height: 150px; }
+.page-main.nosidebar li.otherbets:nth-child(5n+0) { margin-right: 0;}
+
+ul.betonblock { margin: 0; padding: 0; }
+ul.betonblock li { float: left; width: 219px; margin: 0 15px 0 0; padding: 0; list-style: none; }
+.betonblock {
+  img { display: block; width: 100%; max-width: 250px; height: 130px; margin: 0 auto 12px; }
+  h4 { margin-bottom: 10px; text-transform: uppercase; }
+  &.picklist h4 { height: 45px; font-size: 14px; }
+  h4 a { color: $blue-800; text-decoration: none; }
+  h4 a:hover { text-decoration: underline; }
+  li:last-child { margin: 0; }
+  a.bet-button { display: block; width: 100%; margin: 10px auto 0; }
+  a.bet-button.narrow { width: 115px; padding: 13px 5px 8px; text-align: center; text-transform: none; }
+  &.picklist { margin: 0 0 15px; padding: 10px; border: 1px solid $wb-250; overflow: hidden; }
+  &.picklist li:before { display: none; }
+
+  .picksection {
+    position: relative; margin-bottom: 10px; padding: 10px; padding-left: 62px; border: 1px solid $wb-250; background: $wb-100; font-size: 12px;
+
+    .icon { position: absolute; top: 40px; left: 0; width: 45px; color: #f87047; font-weight: bold; text-align: center; text-transform: uppercase; }
+    &.NFL .icon, &.NCAAF .icon { color: #a15555;}
+    &.MLB .icon { color: #dd1812;}
+    &.NHL .icon { color: #759c90;}
+    &.ESPORTS .icon { color: #3d9ae8;}
+    &.GOLF, &.PGA { color: #46a128;}
+    &.HORSE { color: #ac6e31;}
+    &.TENNIS { color: #5f8302;}
+    &.MOTOR { color: #24b4af;}
+    &.BOXING { color: #dd2201;}
+    &.MMA { color: $blue-700;}
+    &.SOCCER, &.FOOTBALL { color: #486060;}
+    span.pick { display: block; }
+    span.pickdate { display: block; margin-bottom: 8px; padding-bottom: 5px; border-bottom: 1px dashed $wb-700; font-weight: bold; }
+    &::before { content: ''; position: absolute; top: 10px; left: 10px; width: 22px; height: 22px; background: url($spritesheet) -396px -683px; }
+    &.NFL::before, &.NCAAF::before { width: 23px;height: 23px; background: url($spritesheet) -420px -682px; }
+    &.NHL::before { width: 23px; height: 23px; background: url($spritesheet) -422px -708px; }
+    &.MLB::before { background: url($spritesheet) -396px -708px; }
+    &.ESPORTS::before { width: 22px; height: 24px; background: url($spritesheet) -396px -732px; }
+    &.TENNIS::before { width: 28px; height: 27px; background: url($spritesheet) -398px -851px; }
+    &.GOLF::before, &.PGA::before { width: 28px; height: 28px; background: url($spritesheet) -433px -819px; }
+    &.SOCCER::before, &.FOOTBALL::before { width: 28px; height: 26px; background: url($spritesheet) -396px -821px; }
+    &.HORSE::before { width: 30px; height: 21px; background: url($spritesheet) -420px -733px; }
+    &.HORSE::before { width: 30px; height: 21px; background: url($spritesheet) -420px -733px; }
+    &.GENERAL::before { width: 33px; height: 28px; background: url($spritesheet) -434px -957px;}
+    &.MOTOR::before { width: 36px; height: 22px; background: url($spritesheet) -392px -955px; }
+    &.BOXING::before { width: 28px; height: 28px; background: url($spritesheet) -478px -953px; }
+    &.MMA::before { width: 29px; height: 27px; background: url($spritesheet) -439px -994px; }
+    p { margin: 0; }
+  }
+}
+
+.bluediv { margin-bottom: 20px;padding: 15px; border: 1px solid $blue-200; overflow: hidden; background: #e7f4fd;}
+.bluediv ul { padding: 0 0 0 10px;}
+.bluediv li { display: inline-block;position: relative;margin: 0 0 5px;padding: 0 10px 0 20px; list-style: none;}
+.bluediv li:last-child { margin: 0;}
+.bluediv li::before { content: ''; position: absolute; top: 6px; left: 0; width: 7px;height: 7px; background: url($spritesheet) -131px -9px;}
+
+ul.iconlisting { margin: 0 0 10px; padding: 0; }
+ul.iconlisting li { display: inline-block; position: relative; vertical-align: top; width: 162px; height: 110px; margin: 0 8px 12px 0; padding: 10px; border: 1px solid $wb-250; list-style: none; background: $wb-100; line-height: 1.2em; text-align: center; }
+ul.iconlisting li::before { display: none; }
+ul.iconlisting li img { display: block; position: absolute; right: 0; bottom: 45px; left: 0; margin: 0 auto; text-align: center; }
+ul.iconlisting li span.icon-name { display: block; position: absolute; right: 0; bottom: 16px; left: 0; margin: 0 auto; font-weight: bold; text-align: center; }
+
+ul.list-triangle {
+  list-style: none;
+
+  li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top:-2px;
+    width: 0;
+    height: 0;
+    margin-right: 10px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 6px solid #000000;
+  }
+}
+
+ul.list-checkbox {
+  list-style: none;
+
+  li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top:0px;
+    vertical-align: middle;
+    width: 20px;
+    height: 18px;
+    margin: 3px 4px 4px 0;
+    background: url($spritesheet) -406px -28px no-repeat;
+    transform: scale(0.7);
+    filter: brightness(0) saturate(100%);
+  }
+}

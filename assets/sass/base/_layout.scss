@@ -1,0 +1,16 @@
+.page-wrapper { position: relative; width: 100%; max-width: 1060px; margin: 0px auto; padding: 0px 20px; }
+#content-container { width: 100%; min-width: 1012px; padding: 25px 20px; background: $white; }
+.headercontainer { padding: 10px 20px 0; background: $white; }
+.page-main { float: left; width: 715px; margin-bottom: 20px; }
+.page-main.nosidebar { width: 100%; padding: 0; float: none; }
+
+@media (max-width: $break-lg) {
+  #content-container { min-width: unset; }
+  .page-wrapper.pageinner { width: $break-md; padding: unset; }
+  .page-main { width: 575px; }
+}
+
+@media (max-width: $break-md) {
+  .page-wrapper.pageinner { width: 100%; }
+  .page-main { display: block; width: 100%; padding: 0; }
+}

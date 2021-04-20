@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------
+1.0 Resets
+normalize.css v2.1.2 | MIT License | git.io/normalize
+--------------------------------------------------------------*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block}
+audio, canvas, video { display: inline-block}
+audio:not([controls]) { display: none;height: 0}
+[hidden], template { display: none}
+html { font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}
+a { background: transparent}
+a:focus { outline: thin dotted}
+a:active, a:hover { outline: 0}
+h1 { margin: .67em 0;font-size: 2em;}
+abbr[title] { border-bottom: 1px dotted}
+b, strong { font-weight: 700}
+dfn { font-style: italic}
+hr { height: 0;-moz-box-sizing: content-box;box-sizing: content-box;}
+mark { color: $black;background: #ffff00;}
+code, kbd, pre, samp { font-family: monospace, serif;font-size: 1em}
+pre { white-space: pre-wrap}
+q { quotes: \201C \201D \2018 \2019;}
+small { font-size: 80%}
+sub, sup { position: relative;vertical-align: baseline;font-size: 75%;line-height: 0;}
+sup { top: -.5em}
+sub { bottom: -.25em}
+img { border: 0}
+svg:not(:root) { overflow: hidden}
+fieldset { margin: 0 2px;padding: .35em .625em .75em;border: 1px solid silver;}
+button, input, select, textarea { margin: 0;font-family: inherit;font-size: 100%;}
+button, input { line-height: normal}
+button, select { text-transform: none}
+button, html input[type=button], input[type=reset], input[type=submit] { cursor: pointer;-webkit-appearance: button;}
+button[disabled], html input[disabled] { cursor: default}
+input[type=checkbox], input[type=radio] { padding: 0;box-sizing: border-box;}
+input[type=search] { -moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing: content;-box-webkit-appearance: textfield;}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none}
+textarea { vertical-align: top;overflow: auto;}
+table { border-spacing: 0;border-collapse: collapse;}
+body, figure { margin: 0}
+legend, button::-moz-focus-inner, input::-moz-focus-inner { padding: 0;border: 0;}
+* { -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
+::before, ::after { -moz-box-sizing: inherit; -ms-box-sizing: inherit; -o-box-sizing: inherit; box-sizing: inherit; }
+
+/*--------------------------------------------------------------
+2.0 Base
+--------------------------------------------------------------*/
+body { color: $wb-800; font-family: $font-body; font-size: 16px; line-height: 1.6; }
+body.theme-football { background: #17375f url('/body_bg_football.jpg') no-repeat center top; background-size: 100% }
+body.theme-basketball { background: #17375f url('/body_bg_basketball.jpg') no-repeat center top; background-size: 100% }
+body.theme-baseball { background: #17375f url('/body_bg_baseball.jpg') no-repeat center top; background-size: 100% }
+body.theme-hockey { background: #17375f url('/body_bg_hockey.jpg') no-repeat center top; background-size: 100% }
+
+img { max-width: 100%; }
+a { color: $link-color; }
+a:hover { color: $link-hover-color; }
+ol, ul { margin: 0; padding: 0; }
+ol li, ul li { list-style-position: inside; }
+p { margin: 0 0 20px 0; padding: 0; }
+hr { height: 20px; margin-bottom: 30px; border: 0; border-bottom: 1px solid $border-color; clear: both; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 20px; color: $blue-800; font-family: $font-title; font-weight: 600; line-height: 1.6; line-height: 1.2em; }
+h2 { font-size: 1.5em; letter-spacing: .5px; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; font-weight: normal; }
+.single-post h1 { margin-bottom: 5px;}
+
+blockquote { position: relative; margin: 10px 0px 20px; padding: 15px 15px 5px 80px; border: solid 1px #e5e6ea; background-color: #f4f5f9; font-family: $font-body; font-style: italic; }
+blockquote::before { content: ""; position: absolute; top: 15px; left: 20px; width: 28px; height: 24px; background: url($spritesheet) no-repeat; background-position: -172px 0px; }
+blockquote strong { font-family: $font-body; font-style: italic; font-weight: bold;}
+blockquote p { margin-bottom: 10px;}
+
+blockquote.altquote { position: relative; margin: 30px 0 30px 35px; padding: 12px 0 2px 35px; border: none; border-left: 3px solid #039be5; clear: both; background-color: $white; font-family: $font-body; font-weight: bold; }
+blockquote.altquote::before { content: initial; background: none; }
+blockquote p { margin-bottom: 10px; }
+
+blockquote.green-version::before { content: "\201C"; position: absolute; top: -10px; left: 20px; width: inherit; height: inherit; color: $wb-550; color: $green-100; background: none; font-family: Georgia, serif; font-size: 66px; font-weight: bold; }
+blockquote.green-version { border: 1px solid #beded1; background: #e9fbf4; font-size: 16px; }
+
+/*--------------------------------------------------------------
+3.0 Clears
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after { content: ''; display: table; line-height: 0; }
+
+.clear:after { clear: both; }
+.clearboth { clear: both; }
+
+.clear:before,
+.clear:after,
+.comparison-table:before,
+.comparison-table:after,
+.calc-popup .row:after { content: ''; display: table; line-height: 0; }
+
+.clear:after,
+.comparison-table:after,
+.calc-popup .row:after { clear: both; }
+.calc-popup .row { display: block; margin: unset; }

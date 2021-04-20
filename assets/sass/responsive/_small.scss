@@ -1,0 +1,293 @@
+@include media($break-sm) {
+  .go-to-top { right: 7px; }
+
+  .review-payment-processors-list { display: block; width: 100%; }
+  .review-payment-processors-list ul { min-height: auto; }
+  .review-table-top-left { display: block; width: 100%; margin-bottom: 5px; padding: 10px 0 5px 0; }
+  .review-table-top-right { display: block; width: 100%; }
+  .review-table-bottom-left { display: block; width: 100%; margin-bottom: 5px; padding: 5px 0px; }
+  .review-table-bottom-right { display: block; width: 100%; }
+  .review-table-review { display: block; width: 100%; margin-bottom: 5px; }
+  .review-table-play { display: block; width: 100%; }
+  .page-content .articlelist li, .page-content .articlelist.highlights li { float: none;width: 100%; margin: 0 0 12px 0; }
+
+  #header-desc { display: none; }
+  #header-logo {
+    border: none;
+    margin-right: initial;
+    padding-right: initial;
+    float: initial;
+    text-align: center;
+
+    img {
+      height: 41px;
+    }
+  }
+
+  .review-mobile-display { display: block; }
+  .review-infobox-left { float: none; width: 100%; }
+  .review-infobox-right { float: none; width: 100%; padding-left: 0px; }
+  .review-infobox-left .review-logo { display: none; }
+  .review-infobox-left .review-signup-button { margin-top: 10px; }
+  .review-hub-county-banners img { display: block; width: auto; }
+  .vegas-sites-col2, .vegas-sites-col1 { display: block; width: 100%; }
+  .vegas-sites-col1 { padding: 10px 0; border-bottom: 1px solid #e2e2e2; }
+  .bannercontact { padding: 15px; background: #123154; }
+  .pro-network, .con-network { float: none; width: 100%; }
+  .pro-network { margin-bottom: 10px; }
+
+  .topoperators.table .tpmgt-entry { position: relative; padding: 20px 0 10px 0; }
+  .topoperators.table .rating { display: block; position: absolute; left: 0; width: 40%; }
+  .topoperators.table .actions { margin-top: 60px; }
+  .topoperators.table .actions .cta { margin-bottom: 12px; }
+  .topoperators.table .review { margin-top: 20px; }
+
+  #olark-wrapper { display: none; }
+
+  .payout-table .payout-accept, .payout-table .deposit-accept { display: none; }
+
+  .int-countries-index ul li { width: 50%; }
+
+  .calc-popup .container { width: 90%; margin-left: -45%; padding: 15px; border-width: 3px; }
+
+  .payment-table-top { display: none; }
+  .payment-table-row div { display: block; width: 100% !important; padding: 8px; }
+  .payment-table-row .name img { display: block; margin: 0 auto; }
+
+  .sportsreports { display: flex; flex-flow: row wrap; }
+  .reportblock { max-width: 46%; padding: 24px 5px 0 10px; }
+  .reportblock .lettergrade { margin-right: 8px; }
+  .reportblock .sitegrade { word-break: break-all; }
+
+  .ezcol ul li { margin-bottom: 15px; }
+  .ezcol-one-half .highlight-box { margin: 2px 0 15px; }
+
+  ul.green-btn-list { position: relative; }
+  ul.green-btn-list li { display: flex; align-items: center; min-height: 52px; margin-bottom: 10px; padding: 10px; border-bottom: 2px solid #13631b;
+    border-radius: 5px; list-style: none; background: $green-200; background: -moz-linear-gradient(top, $green-200 0%, #128919 100%); background: -webkit-linear-gradient(top, $green-200 0%, #128919 100%); background: linear-gradient(to bottom, $green-200 0%, #128919 100%); font-size: 14px; font-weight: bold; cursor: pointer;}
+  ul.green-btn-list li:hover { background: #106818; }
+  ul.green-btn-list li:before { display: none; }
+  ul.green-btn-list li > a { color: $white; text-decoration: none; }
+
+  .more-about.deposit-withdrawals { padding: 15px 20px 15px 20px; background-position: 95% 2px; background-size: 48px 59px; }
+
+  .iconlisting li > a { display: block; width: 100%; height: 100%; }
+
+  ul.otherbetting.fourcolumns { display: flex; flex-flow: row wrap; }
+  ul.otherbetting.fourcolumns li.otherbets, ul.otherbetting.fourcolumns li.otherbets:nth-child(4n), ul.otherbetting.fourcolumns li.otherbets:nth-child(3n) {
+    display: block;
+    float: none;
+    width: 200px;
+    max-width: 48%;
+    max-height: 100px;
+    margin: 0 auto 5px;
+  }
+  ul.otherbetting.fourcolumns li.otherbets img { height: 100px; }
+  li.otherbets p { margin: 0; }
+
+  .heading { display: flex; flex-flow: row; justify-content: flex-start; align-items: center; padding: 6px 9px 6px; }
+  .heading.icon { margin-left: 0; padding-top: 9px; padding-bottom: 9px; }
+  .heading.icon::before { display: block; position: relative; top: unset; left: unset; flex-shrink: 0; margin: 0 9px 5px 0; }
+
+  .show-until-575 { display: block; }
+}
+
+@include media($break-xs) {
+  .collapse-toggle-mobile { cursor: pointer; padding-right: 40px; }
+  .collapse-toggle-icon { right: 5px; }
+  .collapse-toggle-mobile .collapse-toggle-icon { display: inline; }
+  .collapse-section-mobile { display: none; }
+  .collapse-section-mobile.default-open { display: block; }
+
+  .wp-block-image .alignleft,
+  .wp-block-image .alignright,
+  .alignleft,
+  .alignright { float: none; margin: 0px auto 10px auto; text-align: center; }
+  figure.alignright,
+  figure.alignleft,
+  img.alignright,
+  img.alignleft { max-width: 100%; height: auto; }
+
+  .page-title { padding: 15px 0 11px 80px; font-size: 20px; }
+  .btn-xl { width: 100%; }
+  .simple_box { width: 100%; }
+  #footer-widgets { padding: 15px 0px; }
+  #footer-widget-area1 { display: block; width: 100%; padding: 0 10px 10px; }
+  #footer-widget-area2 { display: block; width: 100%; padding: 0 10px; }
+  .closed-pokersites-top-left { display: none; }
+  .timeline-table { width: 100% !important; text-align: left !important; }
+  .box-groovepaper { width: 100% !important; }
+  .networksub-datawrap { float: none; width: 100%; max-width: 100%; margin: 0 0 15px 0; }
+  .other-networks .network { float: left;width: 100%; margin: 0 0 12px 0; }
+  .other-networks .network:nth-child(3n) { margin-right: 0; }
+  .network-timeline { padding: 20px 20px 10px 10px; }
+  .twocolumn-left { float: none; margin: 0px auto 10px auto; text-align: center; }
+  .similar-payment-item li { width: 46%; height: 130px; margin-right: 2%; margin-bottom: 10px; }
+  .depositbanner-us, .depositbanner-us.depositbanner-int { float: none; width: 100%; margin: 0 0 10px 0; }
+  .depositoptions-pros, .depositoptions-cons, .depositoptions-col1 { float: none; width: 100%; min-height: inherit; margin: 0 0 10px; }
+  .depositoptions-col1 img { display: block; margin: 0 auto; }
+  .closed-deposit-logo { margin: 0 auto 10px; }
+  .payment-report .data, .payment-report .logo { float: none; width: 100%; }
+  .payment-report .logo img { width: auto; margin: 0 auto 5px; }
+
+  .otherrooms-logo { float: none; margin: 0 auto; }
+  .network-timeline-boxright .timeline-date, .network-timeline-boxleft .timeline-date { float: none; margin: 0; }
+  .network-timeline-boxleft .timeline-date { text-align: right; }
+  .network-tip.timeline-content { min-height: 110px; }
+  .review-scores-label-right { top: -24px; left: 90px; }
+  .review-strip .leftcol { width: 45%; }
+  .review-strip .midcol, .review-strip .leftcol span, .review-strip img.appr, .review-strip .rightcol span.bonusamt, .review-strip .rightcol span.subonus { display: none; }
+  .review-strip .rightcol { width: 55%; padding: 0 0 0 10px; }
+  .review-strip .rightcol a.review-strip-play { padding: 19px 4px 15px; font-size: 16px; }
+  .review-strip span.bonusamt.mobileonly, .review-strip h4.topstrip { display: block; }
+  .review-strip .leftcol img.logo { display: block; width: auto; height: 60px; }
+  .review-strip h4 { text-align: center; }
+
+  h3.sportsreportsh3::after { width: 50px; }
+  h3.sportsreportsh3::before { width: 50px; }
+  .reportblock { float: none; margin: 0 auto 15px !important; }
+
+  .monthgrades { flex-basis: 37%; }
+
+  .toppayhead_left h2 { padding-top: 0; font-size: 15px; }
+  .toppayhead_left span { display: none; font-size: 11px; }
+  .toppayhead_left { padding: 4px 3px; }
+  .updownarrow { flex-basis: 13%;}
+
+  .deptable tr th, #content .deptable thead th { padding: 5px 4px; }
+  .deptable tr td { padding: 3px 4px; font-size: 11px; }
+  h2.ss-heading { padding: 6px 10px; font-size: 16px; }
+
+  .support-area { float: none; margin: 0 auto 20px; }
+  .related-rooms { display: flex; float: none; flex-flow: row wrap; justify-content: left; align-items: center; width: 100%; margin-bottom: 10px; padding: 0 5px 0px; text-align: center; }
+  .related-rooms > a { order: 1; max-width: 50%; }
+  .related-rooms img { width: auto; max-width: 100%; height: auto; max-height: 70px; margin-bottom: 0; }
+  .related-rooms h4 { order: 3; width: 48%; max-width: 48%; padding-top: 5px; text-align: center; word-break: break-word; }
+  .related-rooms > span { order: 2; max-width: 48%; padding-left: 5px; word-break: break-word; }
+
+  .topoperators.table .title { padding: 8px; }
+  .topoperators.table .title h2 { font-size: 18px; }
+
+  .related_left, .related_right { float: none; width: 100%; }
+  .related_left { margin-bottom: 10px; }
+
+  .review-contact label { width: 60%; }
+  .missionitem .info h4 { text-align: center; text-transform: uppercase; }
+  .missionitem .icon { float: none; margin: 0 auto 20px; }
+  .whatbetting .iconarea { float: none; width: 100%; margin: 0 0 20px; padding-top: 0; }
+  .whatbetting .info { padding: 0; }
+  .whatbetting .info::before, .whatbetting figure { display: none; }
+
+  .toc, .toc.borderleft { float: none; width: 100%; margin: 0 0 20px; }
+  .toc { text-align: center; }
+  .toc ul { display: inline-block; text-align: left; }
+  .toc .imagearea { max-width: 210px; margin: auto auto 10px; }
+  ul.toc.blocks, .toc.blocks ul { text-align: center; word-wrap: break-word; }
+  .toc.blocks li { margin: 0 5px 8px 0; font-size: 15px; }
+
+  .heading-usaflagbg { padding: 10px; line-height: 1; }
+  .review-contact label { width: 50%; }
+  .review-payment-grade { text-align: center; padding: 18px; }
+  .review-payment-grade label { display: block; padding: 0px; }
+  .review-average-score { width: 95%; }
+  .review-contact label { display: block; width: 100%; }
+  .review-contact a { position: static; margin-top: 5px; text-align: center; }
+  .review-rating-stars-container span { top: 27px; right: auto; left: 0px; }
+
+  .review-average-score { font-size: 30px; }
+
+  .review-strip-top-middle { display: block; width: 100%; }
+
+  .media-left.media-220, .media-right.media-220, .media-left.media-160, .media-right.media-160, .media.mobile-reset .media-right, .media.mobile-reset .media-left { display: block; width: 100%; }
+  .media-left.media-220 img, .media-right.media-220 img, .media-left.media-160 img, .media-right.media-160 img, .media.mobile-reset .media-left img, .media.mobile-reset .media-right img { display: block; margin: 0 auto; }
+
+  ul.greencheck { margin: 0 0 20px 12px; }
+  .country-toc .flag { padding: 0; }
+  .country-toc .flag img { height: auto; }
+  .country-toc { float: none; width: 98%; margin: 0 auto; }
+
+  a.steps-toc-item { display: block; margin: 0 auto 10px; }
+  a.steps-toc-item::after { display: none; }
+
+  h3.bettipno { padding: 68px 5px 11px; text-align: center; }
+  h3.bettipno span.tipwrap { left: 0px; width: 100%; }
+
+  .topnflsportsbooks .col1, .topnflsportsbooks .col2 { display: block; width: 100%; padding: 0 0 0px; border: 0; }
+
+  .vegas-sportsbook .sportsbook-info { float: none; margin: 0 auto 15px; }
+
+  .topsportsbook-wrap .topsportsbooks-item, .topsportsbook-wrap .topsportsbooks-item:last-child { float: none; width: 250px; margin: 0 auto 15px; }
+
+  .sb-sportsbooks .row1::before { display: none; }
+  .sb-sportsbooks .row1 { padding: 0; }
+  .sb-sportsbooks .row1 img { max-width: 120px;height: auto; }
+  .sb-sportsbooks .row1 .button-redbg { width: 120px; padding: 16px 5px 10px; }
+
+  .review-rating-top-left { padding: 2px 10px; }
+  .widepros { padding: 20px 12px 15px; }
+
+  .payout-table .max-limits { display: none; }
+  .feature-payout-item .min-col, .feature-payout-item .max-col { float: none; width: 100%; }
+
+  .int-countries-index ul li { float: none; width: 100%; }
+
+  .international-betting .int-flag { width: 100px; padding: 10px;}
+  ul.iconlisting li { width: 46%;margin: 0 1.5% 12px 1.5%; }
+
+  .contact-box .iconarea { float: left; width: 100px; padding: 10px; }
+  .contact-box .emailadd { padding: 10px; font-size: 14px; }
+
+  .calc-popup h4 { margin-bottom: 20px; font-size: 18px; }
+  .calc-popup-col1, .calc-popup-col2 { float: none; width: 100%; }
+  .calc-popup-col1 { margin: 0 0 20px; }
+  .calc-popup-col1 img { width: 150px; margin: 0 auto; }
+  .calc-popup-col2 .button-redbg { width: 100%; }
+
+  table.mobile-scroll { display: block; width: 100%; margin: 0 0 1em; overflow-x: auto; white-space: nowrap; }
+  table.mobile-blocks, table.mobile-blocks tr, table.mobile-blocks tbody, table.mobile-blocks thead, table.mobile-blocks td, table.mobile-blocks th { display: block; text-align: center; }
+  table.mobile-blocks:not(.use-first) th:not(:nth-child(2)),
+  table.mobile-blocks:not(.use-first) thead tr *:not(:nth-child(2)),
+  table.mobile-blocks:not(.use-first) td:first-child,
+  table.mobile-blocks.use-first th:not(:first-child),
+  table.mobile-blocks.use-first thead tr *:not(:first-child) { display: none; }
+  table.mobile-blocks td, table.mobile-blocks thead tr, table.mobile-blocks tbody tr { border: none; }
+  table.mobile-blocks thead tr { border-bottom: 1px solid $wb-300; }
+  table.mobile-blocks tbody tr { border-top: 1px solid $wb-300; }
+  table.mobile-blocks td ul { display: inline-block; text-align: left; }
+
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .fade-in { opacity: 0; -moz-animation: fadeIn ease-in 1; -webkit-animation: fadeIn ease-in 1; animation: fadeIn ease-in 1; -moz-animation-duration: 1s; -webkit-animation-duration: 1s; animation-duration: 1s; -moz-animation-delay: 2s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-fill-mode: forwards; -moz-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+  .payout-list a { float: none; width: 100%; margin: 0 0 15px; }
+  ul.betonblock { margin-bottom: 15px; }
+  ul.betonblock li { float: none; width: 100%; margin: 0 0 15px; }
+  .betonblock img { height: auto; }
+  .betonblock.picklist h4 { height: auto; }
+  .betonblock .toggle-button { float: none; width: 100%; margin: 5px auto 10px; }
+
+  ul.mission-table li { float: none; width: 100%; height: auto; }
+  .page-main.nosidebar li.otherbets, .page-main.nosidebar li.otherbets:nth-child(5n) { float: none; margin: 0 auto 20px; }
+
+  h3.home-title, h1.home-title, h3.home-subtitle { font-size: 20px; }
+  h1.home-title { font-size: 16px; }
+  h3.home-subtitle { font-size: 14px; }
+  ul.greencheck.home-intro { margin: 0 0 20px 10px; font-size: 14px; }
+
+  .gsc-control-cse .gsc-input { padding-right: 6px !important; }
+  .gssb_c { margin-top: 40px !important; }
+  .gsc-search-button-v2, .gsc-search-button-v2 { padding: 8px 16px !important; }
+  .search-box .gsc-input-box {
+    padding: 5px 9px;
+  }
+}

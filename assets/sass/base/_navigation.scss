@@ -1,0 +1,135 @@
+.main-nav {
+  position: relative;
+
+  @include media($break-md) {
+    display: none;
+  }
+}
+
+.header-nav {
+  clear: both;
+
+  li { list-style: none; }
+  > ul { display:table; margin:0 auto; }
+  > ul > li { position:relative; display:table-cell; padding: 0px 4px 0px 0px; vertical-align:top; }
+  > ul > li:last-of-type { padding-right:0 }
+  > ul > li > a { display: block; padding: 9px 14px; color: $white; background:$primary; background: linear-gradient(to bottom, $primary 0%, $blue-500 100%); font-family: $font-title; font-size: 15px; text-decoration: none; text-transform: uppercase; border-radius:3px 3px 0 0; cursor:pointer; user-select:none; }
+  > ul > li > a:hover, a.search-icon:hover { color: $blue-500; background:#eff3f3; background: linear-gradient(to bottom, #eff3f3 0%, #bec4c8 100%); }
+  > ul > li:hover > ul { display: block; }
+  ul.sub-menu { display: none; position: absolute; z-index: 99999; top: 42px; left: 0; width: 200px; border-right: solid 1px $wb-350; border-bottom: solid 1px $wb-350; border-left: solid 1px $wb-350; }
+  ul.sub-menu li { min-width: 180px; }
+  ul.sub-menu ul { top: 0; left: 100%; }
+  ul.sub-menu a { display: block; position: relative; padding: 10px 5px 10px 20px; border-bottom: solid 1px #eceff1; color: $wb-800; background: $white; font-size: 13px; text-decoration: none; }
+  ul.sub-menu a::before { content: ""; position: absolute; top: 0px; left: 0px; width: 5px; height: 7px; margin: 15px 0px 0px 10px; background: url($spritesheet) no-repeat; background-position: -125px 0px; }
+  ul.sub-menu a:hover { color: $blue-600; background: #f0f6ff; }
+
+  > ul > li.featured-tab > a { color: #1890cc; background: linear-gradient(to bottom, #fefefe 50%, $wb-350 100%); }
+  > ul > li.featured-tab.style2 > a { color: $white; background: linear-gradient(to bottom, #c0262d 50%, #b10608 100%); }
+  > ul > li.featured-tab > a:hover { color: $blue-500; background: #eff3f3; background: linear-gradient(to bottom, #eff3f3 0%, #bec4c8 100%); }
+}
+
+a.search-icon { display: block; position: relative; width: 40px; height: 42px; }
+a.search-icon:focus { outline:none; }
+a.search-icon::before { content: ''; position: absolute; top: 10px; right: 9px;width: 24px; height: 24px;background: url($spritesheet) -106px -8px; }
+.search-box {
+  display:none;
+  position:absolute;
+  z-index:12;
+  top:43px;
+  right:-15px;
+  width: 270px;
+  min-height: 54px;
+  padding:8px;
+  border:1px solid #dadada;
+  overflow:hidden;
+  background:$white;
+  box-shadow:0px 1px 2px #9b9696;
+
+  &.mobile {
+    right: 0px;
+    top: 65px;
+  }
+}
+
+.mobile-nav {
+  display: none;
+
+  > ul { display:block; height:42px; text-align:center; overflow:hidden; }
+  > ul > li { @include inline-block(); }
+
+  @include media($break-md) {
+    display: block;
+
+  }
+}
+
+#mobile-menu-btn {
+  display: none; position: absolute; z-index: 100; top: 22px; left: 15px;
+
+  @include media($break-md) {
+    display:block;
+    padding: 9px 9px 4px;
+    border: 0;
+    border-radius: 3px;
+    background: $primary;
+    background: linear-gradient(to bottom, $primary 0%, $blue-500 100%);
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 6px 0 $black;
+    cursor: pointer;
+
+    &:focus { outline: none; }
+    span { display: block; position: relative; z-index: 1; width: 26px; height: 4px; margin-bottom: 5px; border-radius: 3px; background: $white; transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease; transform-origin: 1px 0px; }
+    &.open-menu span { opacity: 1; transform: rotate(45deg) translate(4px, -3px); }
+    &.open-menu span:nth-child(2) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); }
+    &.open-menu span:nth-child(3) { transform: rotate(-45deg) translate(1px, 1px); }
+  }
+}
+
+#mobile-menu-search-btn {
+  @extend #mobile-menu-btn;
+  right: 15px;
+  left: initial;
+  padding: 7px 10px 3px;
+  svg {
+    fill: $white;
+  }
+}
+
+.mobile-menu {
+  display: none;
+
+  .menu-item-has-children .arrow { display: none;}
+
+  @include media($break-md) {
+    display: none; position: absolute; z-index: 9999; top: 82px; right: 0; width: 100%; background: #06152f;
+
+    .logomobile { padding: 10px 5px 10px 10px; color: $white; font-size: 26px; font-weight: 900; }
+    ul { margin: 0; padding: 0; list-style: none; }
+    ul li { position: relative; border-top: 1px solid #0c2641; }
+    .menu-item-has-children .arrow { content: "\25bc "; display: block; position: absolute; top: 0; right: 0; padding: 10px;border-left: 1px solid #0c2641; color: $white; cursor: pointer; }
+    .menu-item-has-children .arrow.up { display: none; }
+    .menu-icon-up > .arrow.down { display: none !important; }
+    .menu-icon-up > .arrow.up { display: block !important; background-color: #0c2641; }
+    ul li a { position: relative;z-index: 99999; padding: 10px; color: $white; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; line-height: 38px; text-decoration: none; }
+    ul ul { display: none; padding-left: 15px; }
+    ul ul a { padding-left: 30px; }
+    .open { display: block; }
+  }
+}
+
+.go-to-top { display: none; position: fixed; z-index: 9999999; right: 15px; bottom: 15px; width: 50px; height: 50px; border: 1px solid #c3c3c3; border-radius: 50%; color: #7f8c8d; background: $wb-350; opacity: 0.8; text-align: center; box-shadow: 0 0 5px 1px #a4a4a4; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+.go-to-top svg { display: inline-block; width: 30px; height: 30px; margin-top: calc(50% - 16px); }
+.go-to-top:hover { border: 1px solid $blue-500; color: $white; background: $primary; background: linear-gradient(to bottom, $primary 0%, $blue-500 100%); box-shadow: 0 0 5px 1px #9dd3ed; }
+
+.collapse-toggle { cursor: pointer; }
+.heading.collapse-toggle { padding-right: 40px; }
+.collapse-toggle-icon { position: absolute; top: calc(50% - 13px); right: 10px; }
+.collapse-toggle-mobile .collapse-toggle-icon { display: none; }
+.collapse-toggle svg, .collapse-toggle-mobile svg { display: inline-block; width: 25px; height: 25px; }
+.collapse-section { display: none; }
+.collapse-section.default-open { display: block; }
+.collapse-section-mobile { display: block; }
+
+a.backtotop { color: $red-200; font-size: 11px;text-decoration: underline;}
+a.backtotop:hover { text-decoration: none;}

@@ -1,0 +1,77 @@
+.alignnone { float: none; }
+.alignleft { display: block; float: left; margin-right: 20px; margin-bottom: 10px; }
+.alignright { display: block; float: right; margin-bottom: 10px; margin-left: 20px; }
+.aligncenter { display: block; margin: 0px auto 10px; text-align: center; }
+
+.text-align-right { text-align: right; }
+.text-align-center { text-align: center; }
+
+.position-relative { position: relative; }
+.bold { font-weight: bold; }
+.no-sidebar { float: none !important; width: 100% !important; }
+.showme { display: block;}
+.flex-column { display: flex; flex-flow: column; }
+.hide-element { display: none; }
+.justify-content-left { justify-content: left !important; }
+
+.italic { font-style: italic; }
+#breadcrumbs { margin: -10px 0 10px 0; color: $wb-550; font-family: $font-title; font-size: 11px; font-weight: bold; }
+a.fullink { display: block; position: absolute; z-index: 4; top: 0px; left: 0px; width: 100%; height: 100%; background: $white; opacity: 0; filter: alpha(opacity=0); }
+a.moreinfo { display: block; padding: 0 0 10px 0; color: $red-200; font-size: 12px; font-weight: bold; text-align: right; text-transform: uppercase; }
+a.moreinfo:hover { text-decoration: none; }
+a.gray-link-button { display: inline-block; height: 40px; padding: 0 12px; color: $white; background: #a9a9a9; font-size: 12px; font-weight: bold; line-height: 40px; text-decoration: none; text-transform: uppercase;}
+a.gray-link-button:hover { background: $wb-550;}
+
+/* Show/Hide */
+.show-until-775 { display: none; }
+.show-until-575 { display: none; }
+
+@each $screen in map-keys($screens-map) {
+  .hide-#{$screen} {
+    @include media(map-get($screens-map, $screen)) {
+      display: none;
+    }
+  }
+
+  .show-#{$screen} {
+    display: none;
+    @include media(map-get($screens-map, $screen)) {
+      display: block;
+    }
+  }
+  span .show-#{$screen} {
+    @include media(map-get($screens-map, $screen)) {
+      display: inline;
+    }
+  }
+}
+
+/* Spacing classes */
+@each $dir in map-keys($directions-map) {
+  @each $sp in $spacing-list {
+    .m-#{$sp} {
+      margin: #{$sp}px;
+    }
+    .m#{$dir}-#{$sp} {
+      margin-#{map-get($directions-map, $dir)}: #{$sp}px;
+    }
+    .p-#{$sp} {
+      padding: #{$sp}px;
+    }
+    .p#{$dir}-#{$sp} {
+      padding-#{map-get($directions-map, $dir)}: #{$sp}px;
+    }
+  }
+}
+
+/*Background hover Colors*/
+.bg-hover-green:hover { background-color: $green-100 !important; }
+.bg-hover-red:hover { background-color: $red-200 !important; }
+
+/*Borders*/
+.border-left-grey { border-left: solid 1px $wb-450; }
+.border-right-grey { border-right: solid 1px $wb-450; }
+.border-bottom-dotted-orange { border-bottom: dotted 1px #ff4f19; }
+.border-bottom-dotted-darkblue { border-bottom: dotted 1px $blue-800; }
+.box-white-greyborders-shadow { margin-bottom: 25px; padding: 10px; border: solid 1px $wb-400; clear: both; background-color: $white;box-shadow: 0px 11px 10px -7px $border-color; }
+

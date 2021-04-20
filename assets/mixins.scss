@@ -28,3 +28,10 @@
 
   @return $number;
 }
+
+@mixin flex-align($h:center,$v:center,$t:center) {
+  display: flex;
+  text-align: $t;
+  justify-content: $h;
+  align-items: $v;
+}

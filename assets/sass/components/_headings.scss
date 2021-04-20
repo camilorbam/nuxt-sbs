@@ -1,0 +1,240 @@
+/*Header Icon */
+a.header-icon { position: absolute; top: 12px; right: 80px; width: 164px; padding-top: 62px; color: #d9f0fc; background: url('/mm-image-icon-sm.png') top center no-repeat; font-size: 11px; text-align: center; text-decoration: none; text-transform: uppercase; }
+a.header-icon:hover { text-decoration: underline; }
+
+h4.updateheading { position: relative; margin: 0 25px 20px 65px; padding-top: 4px; padding-bottom: 10px; border-bottom: 1px solid #f37020; color: #f37020;}
+h4.updateheading::before { content: ""; display: block; position: absolute; top: 0; left: -53px; width: 40px; height: 40px; background: url('/calend_icon.png'); }
+
+/************* Special Header Classes ******************/
+.heading-slashbg-container,
+h2.heading-slashbg-container,
+h3.heading-slashbg-container,
+h4.heading-slashbg-container,
+h5.heading-slashbg-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 5px;
+  margin: 10px 0;
+  clear: both;
+  background: none;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  h2, h3, h4, h5 {
+    margin-bottom: 0;
+    padding-right: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+
+  }
+
+  &:after {
+    content: '';
+    display: list-item;
+    position: relative;
+    flex: 1;
+    width: 100%;
+    min-width: 20px;
+    height: 100%;
+    margin-left: 10px;
+    list-style-position: inside;
+    list-style-type: square;
+    color: #ffffff;
+    background-color: #ffffff;
+    background-image: url('/spacer-pattern.png');
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+
+  &.darkgray {
+    background: $wb-150;
+  }
+
+  &.heading-slashbg-gray {
+    background: $wb-50;
+  }
+}
+
+.heading-usaflagbg { height: 60px; padding: 19px 0px 0px 0px; clear: both; color: #fee801; background: url('/processor-grades-header.jpg') no-repeat; background-size: 100% 100%; font-family: $font-title; font-size: 21px; text-align: center;}
+
+.faqheading { position: relative; margin: 0 0 18px; padding: 0 0 11px 35px; border-bottom: 3px solid $wb-450; clear: both; font-family: $font-title; font-size: 18px;}
+.faqheading::after { content: '';position: absolute; bottom: -3px; left: 0; width: 28px; height: 3px;background: $blue-400;}
+
+/************* Header Classes and Icons ******************/
+.heading { position: relative; padding: 11px 15px 12px; border: solid 1px $wb-250; clear: both; color: $blue-800; background-color: $wb-100; font-family: $font-title;font-size: 21px; }
+h1.heading { font-size: 22px; }
+h2.heading { text-transform: capitalize; }
+h3.heading { font-size: 19px; }
+h4.heading { font-size: 18px; }
+.heading.center { text-align: center;}
+.heading.darkblue { border: 0; color: $white; background-color: $blue-800; }
+.heading.gray { border: 0; background-color: #dedede; }
+.heading.skyblue { border: 0; color: $white; background-color: $blue-400; }
+.heading.red { border: 0; color: $white; background-color: $red-200; }
+.heading.style2 { padding: 12px 15px 8px; border-bottom: 3px solid #039be5;}
+.heading.style2.light, .heading.style2.skyblue { border-color: $wb-250;}
+.heading.style2.dark { border-color: $wb-550;}
+.heading.style2.dotted { border: 0; border-bottom-width: 1px; border-bottom-style: dotted;color: $blue-800;background: none;}
+h2.bottom-dots, h3.bottom-dots, h4.bottom-dots { padding-bottom: 1px; background-image: linear-gradient(to right, $wb-850 30%, rgba(255, 255, 255, 0) 10%); background-repeat: repeat-x; background-position: bottom; background-size: 5px 1px; text-transform: uppercase; }
+
+.heading.icon { margin-left: 55px;}
+.heading.icon::before { content: ""; position: absolute; top: -1px; left: -55px; width: 50px; height: 50px; background-image: url($spritesheet); background-repeat: no-repeat; }
+.heading.icon-steps { margin-left: 22px;padding: 16px 15px 11px; }
+.heading.icon-steps::before { content: ""; position: absolute; top: 0px; left: -54px; width: 50px; height: 60px; background-image: url($spritesheet); background-repeat: no-repeat; }
+
+.page-title { position: relative; margin-bottom: 20px; padding: 10px 0 10px 80px; color: $white; background: url('/h1-heading-bg.jpg') $blue-800 no-repeat;font-family: $font-title; font-size: 25px; }
+.page-title::before { content: ""; position: absolute; top: 0px; left: 0; width: 49px; height: 49px; background: url($spritesheet) no-repeat; }
+
+.icon-locked::before { width: 22px; height: 30px; margin: 10px 0px 0px 15px; background-position: -15px 0px; }
+.icon-flag-usa::before { width: 34px; height: 31px; margin: 10px 0px 0px 10px; background-position: -408px 0px; }
+.icon-star-circle::before { width: 36px; height: 36px; margin: 7px 0px 0px 10px; background-position: -444px 0px; }
+.icon-skull::before { width: 31px; height: 30px; margin: 10px 0px 0px 15px; background-position: -122px -28px; }
+.icon-payme::before { background-position: -364px -294px; }
+.icon-globe::before { background-position: -156px -242px; }
+.icon-doc::before { background-position: -156px -554px; }
+.icon-cards::before { background-position: -156px -502px; }
+.icon-info::before { background-position: -208px -294px; }
+.icon-who::before { background-position: -416px -294px; }
+.icon-lock::before { background-position: 0px -450px; }
+.icon-mallet::before { background-position: -52px -450px; }
+.icon-dollarsign::before { background-position: -104px -450px; }
+.icon-questionmark::before { background-position: -156px -450px; }
+.icon-pencil::before { background-position: -208px -450px; }
+.icon-empty::before { background-position: -260px -450px; }
+.icon-skullbones::before { background-position: -312px -450px; }
+.icon-casinochip::before { background-position: -364px -450px; }
+.icon-clipboard::before { background-position: -416px -450px; }
+.icon-magnifyhead::before { background-position: 0px -398px; }
+.icon-chatbubble::before { background-position: -52px -398px; }
+.icon-moneybag::before { background-position: -104px -398px; }
+.icon-airhorn::before { background-position: -156px -398px; }
+.icon-fingerpoint::before { background-position: -208px -398px; }
+.icon-dartboard::before { background-position: -260px -398px; }
+.icon-tombstone::before { background-position: -312px -398px; }
+.icon-warningtriangle::before { background-position: -364px -398px; }
+.icon-headquestions::before { background-position: -416px -398px; }
+.icon-dollarstack::before { background-position: 0px -346px; }
+.icon-basketball::before { background-position: -52px -346px; }
+.icon-doubledice::before { background-position: -104px -346px; }
+.icon-3ddice::before { background-position: -156px -346px; }
+.icon-clockrewind::before { background-position: -208px -346px; }
+.icon-horse::before { background-position: -260px -346px; }
+.icon-calendarclock::before { background-position: -312px -346px; }
+.icon-net::before { background-position: 0px -294px; }
+.icon-updown::before { background-position: -52px -294px; }
+.icon-brain::before { background-position: -104px -294px; }
+.icon-rocket::before { background-position: -156px -294px; }
+.icon-info::before { background-position: -208px -294px; }
+.icon-network::before { background-position: -416px -346px; }
+.icon-rip::before { background-position: -364px -346px; }
+.icon-close::before { background-position: -260px -294px; }
+.icon-wallet::before { background-position: -312px -294px; }
+.icon-whois::before { background-position: -416px -294px; }
+.icon-lightning::before { background-position: 0px -242px; }
+.icon-paymentprocess::before { background-position: -208px -242px; }
+.icon-uigea::before { background-position: -260px -242px; }
+.icon-blkfri::before { background-position: -312px -242px; }
+.icon-regulated::before { background-position: -364px -242px; }
+.icon-delaware::before { background-position: -416px -242px; }
+.icon-nj::before { background-position: 0px -502px; }
+.icon-cardsclubs::before { background-position: -52px -502px; }
+.icon-chips::before { background-position: -104px -502px; }
+.icon-cardhearts::before { background-position: -156px -502px; }
+.icon-promos::before { background-position: -208px -502px; }
+.icon-building::before { background-position: -260px -502px; }
+.icon-food::before { background-position: -312px -502px; }
+.icon-law::before { background-position: -364px -502px; }
+.icon-pen::before { background-position: -416px -502px; }
+.icon-anti::before { background-position: 0px -554px; }
+.icon-search::before { background-position: -52px -554px; }
+.icon-ideas::before { background-position: -104px -554px; }
+.icon-usflag::before { background-position: -104px -242px; }
+.icon-searchme::before { background-position: -208px -554px; }
+.icon-cheater::before { background-position: -260px -554px; }
+.icon-reading::before { background-position: -312px -554px; }
+.icon-merge::before { background-position: -364px -554px; }
+.icon-launch::before { background-position: -416px -554px; }
+.icon-3lines::before { background-position: -468px -554px; }
+.icon-running::before { background-position: -468px -502px; }
+.icon-safety::before { background-position: -468px -450px; }
+.icon-star::before { background-position: -520px -450px; }
+.icon-baseball::before { background-position: -520px -398px; }
+.icon-football::before { background-position: -468px -346px; }
+.icon-basketballbig::before { background-position: -468px -294px; }
+.icon-thinking::before { background-position: -520px -346px; }
+.icon-articles::before { background-position: -468px -398px; }
+.icon-trophy::before { background-position: -520px -294px; }
+.icon-nhlhockey::before { background-position: -520px -502px; }
+.icon-highlights::before { background-position: -520px -242px; }
+.icon-bestsites::before { background-position: -520px -554px; }
+.icon-support::before { background-position: -520px -606px; }
+.icon-conclusion::before { background-position: -520px -658px; }
+.icon-dollarbet::before { background-position: -572px -242px; }
+.icon-topbettingsites::before { background-position: -572px -294px;}
+.icon-playbook::before { background-position: -572px -346px; }
+.icon-bargraph::before { background-position: -572px -398px;}
+.icon-livebet::before { background-position: -572px -450px; }
+.icon-mobilebet::before { background-position: -572px -502px; }
+.icon-ribbonaward::before { background-position: -624px -242px; }
+.icon-fivestars::before { background-position: -624px -294px; }
+.icon-fireworks::before { background-position: -624px -346px; }
+.icon-handdoc::before { background-position: -624px -398px; }
+.icon-moneystack::before { background-position: -624px -450px; }
+.icon-robin::before { background-position: -624px -502px; }
+.icon-rrbetting::before { background-position: -624px -554px; }
+.icon-grid::before { background-position: -624px -606px; }
+.icon-thumbup::before { background-position: -624px -658px; }
+.icon-calculator::before { background-position: -624px -710px; }
+.icon-localbookie::before { background-position: -468px -606px; }
+.icon-handshake::before { background-position: -468px -658px; }
+.icon-thumbdown::before { background-position: -468px -710px; }
+.icon-topgraph::before { background-position: -468px -814px; }
+.icon-awardone::before { background-position: -468px -762px; }
+.icon-nonusdeposits::before { background-position: -364px -138px; }
+.icon-todaysoptions::before { background-position: -364px -190px; }
+.icon-creditcards::before { background-position: -416px -190px; }
+.icon-bitcoin::before { background-position: -416px -138px; }
+.icon-handmoney::before { background-position: -364px -86px; }
+.icon-greenbg-moneybag { position: relative; margin-left: 100px; }
+.icon-greenbg-moneybag::before { content: ""; position: absolute; top: 0px; left: 0px; width: 80px; height: 80px; margin: 0px 0px 0px -100px; background: url($spritesheet) no-repeat; background-position: 0px -122px; }
+.icon-nfl-step1::before, .icon-nfl-bet::before { background-position: 0px -871px; }
+.icon-nfl-step2::before { background-position: -52px -871px; }
+.icon-nfl-step3::before { background-position: -104px -871px; }
+.icon-nfl-step4::before { background-position: -156px -871px; }
+.icon-nfl-step5::before { background-position: -208px -871px; }
+.icon-nfl-step6::before { background-position: -260px -871px; }
+.icon-nfl-step7::before { background-position: -312px -871px; }
+.icon-other-bet::before { background-position: -572px -554px; }
+.icon-mlb-bet::before { background-position: -572px -616px; }
+.icon-nba-bet::before { background-position: -572px -678px; }
+.icon-usa-bet::before { background-position: -572px -741px; }
+.icon-global-bet::before { background-position: -572px -803px; }
+.icon-yellow-star::before { background-position: -624px -1048px; }
+.icon-betonline::before { background-position: -624px -762px; }
+.icon-gtbets::before { background-position: -624px -886px; }
+.icon-bovada::before { background-position: -624px -824px; }
+.icon-visa::before { background-position: -396px -759px; }
+.icon-mastercard::before { background-position: -393px -891px; }
+.icon-bitcoin::before { background-position: -520px -836px; }
+.icon-sportsbetting::before { background-position: -624px -1110px; }
+.icon-888sport::before { background-position: 0px -1280px; }
+.icon-betnow::before { background-position: -52px -1280px; }
+.icon-betway::before { background-position: -104px -1280px; }
+.icon-intertops::before { background-position: -156px -1280px; }
+.icon-mybookie::before { background-position: -208px -1280px; }
+.icon-bodog::before { background-position: -260px -1280px; }
+.icon-betus::before { background-position: -312px -1280px; }
+
+/*Test CTA 4-5-18 */
+h4.topranked { position: relative; margin: 0 0 25px 36px; color: #ee9f0d; font-size: 20px; font-style: italic; }
+h4.topranked::before { content: ''; position: absolute; top: 12px; left: -57px; width: 57px; height: 133px; background: url('https://www.safestbettingsites.com/wp-content/uploads/2018/04/arrow.png')}
+
+h3.bettipno { position: relative; padding: 15px 5px 15px 170px; border: 1px solid $blue-200; background: $blue-100; font-size: 18px; text-transform: uppercase;}
+h3.bettipno span.tipwrap { position: absolute; top: -1px; left: -1px;width: 150px;padding: 10px 10px 9px 16px;color: #fee801;background: $blue-800;background: -moz-linear-gradient(left, $blue-800 0%, #597ca0 100%);
+  background: -webkit-linear-gradient(left, $blue-800 0%, #597ca0 100%); background: linear-gradient(to right, $blue-800 0%, #597ca0 100%); }
+h3.bettipno span.tip { display: inline-block;vertical-align: top;width: 60px;font-size: 15px;line-height: 1em;}
+h3.bettipno span.tipno { display: inline-block;vertical-align: bottom;font-size: 38px;line-height: 40px;line-height: 34px;}

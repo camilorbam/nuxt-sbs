@@ -1,0 +1,45 @@
+footer {
+	color: $border-color;
+
+	p { margin: 0 0 10px 0; }
+	a { color: $border-color; text-decoration: none; }
+	a:hover { color: $blue-600; }
+
+  .logo-espn { content: ''; width: 126px; height: 33px; background: url($spritesheet) -372px -1138px;}
+  .logo-bleacher { content: ''; width: 120px; height: 42px; background: url($spritesheet) -374px -1095px;}
+  .logo-fox { content: ''; width: 116px; height: 42px; background: url($spritesheet) -373px -1174px;}
+  .logo-cbs { content: ''; width: 144px; height: 30px; background: url($spritesheet) -370px -1247px;}
+  .logo-pcgamer { content: ''; width: 135px; height: 29px; background: url($spritesheet) -371px -1217px;}
+  .logo-nbclat { content: ''; width: 98px; height: 49px; background: url($spritesheet) -518px -1147px;}
+  .logo-forbes { content: ''; width: 117px; height: 30px; background: url($spritesheet) -518px -1202px;}
+  .gamble-responsibly { width: 175px; height: 25px; margin: 0 4px; border: 2px solid $white; border-radius: 5px; color: $white; background-color: #2e527e; font-family: $font-title; font-size: 15px; line-height: 1.4; }
+  .gamble-responsibly:before { content: '18+'; position: relative; float: left; top: -8px; left: -5px; width: 38px; height: 36px; margin: 0 0 -10px 0; padding-top: 6px; border: 2px solid $white; border-radius: 50%; background-color: #f32435; text-align: center; }
+
+}
+
+#footer-top { border-top: solid 3px #95a5a6; border-bottom: solid 1px #32527a; background: #1e477a; background: -moz-linear-gradient(top, #1e477a 0%, #17365c 100%); background: -webkit-linear-gradient(top, #1e477a 0%, #17365c 100%); background: linear-gradient(to bottom, #1e477a 0%, #17365c 100%); }
+#footer-bottom { padding: 20px 0px; background-color: #112946; text-align: center; font-size:0.8em; }
+#footer-widgets { display: table; width: 100%; padding: 30px 0 5px; border-bottom: dotted 1px $border-color; }
+#footer-logo { display: table-cell; width: 34%; padding: 5px 20px 0 0; }
+#footer-logo .logo { display:block; margin-bottom: 20px; }
+#footer-widget-area1 { display: table-cell; vertical-align: top; width: 35%; padding-right: 20px; }
+#footer-widget-area2 { display: table-cell; vertical-align: top; width: 31%; }
+#footer-widget-area3 { display: block; width: 100%; padding: 10px 0 20px 0; border-bottom: dotted 1px $border-color; }
+
+#footer-widget-area1 li, 
+#footer-widget-area2 li,
+#footer-widget-area3 li { list-style: none; }
+#footer-widget-area1 .widget-title,
+#footer-widget-area2 .widget-title { margin: 0px; padding: 0px 0px 10px 0px; color: $white; font-family: $font-body; font-size: 14px; text-transform: uppercase; }
+#footer-widget-area1 .textwidget,
+#footer-widget-area2 .textwidget { font-size: 13px; }
+#page-footer .widget-container { padding-bottom: 10px; }
+.widget_footerfeaturedin_widget { display: flex; flex-flow: row wrap; justify-content: center; align-items: center; width: 100%; padding: 5px 0; text-align: center; }
+.widget_footerfeaturedin_widget .widget-title { margin: 10px 30px 0 0; padding-top: 4px; color: $white; font-family: $font-body; font-size: 14px; text-transform: uppercase;}
+.widget_footerfeaturedin_widget .fblocks { margin: 10px 30px 0 0; }
+
+.footer-nav { padding: 20px 0px; clear: both;text-align: center;}
+.footer-nav li { display: inline-block; list-style: none; }
+.footer-nav li a { padding: 0px 10px; border-right: dotted 1px $border-color; font-family: $font-title; font-size:0.9em; line-height:2.5em; text-transform: uppercase; font-weight: bold; }
+.footer-nav li:first-child a { padding: 0px 10px 0px 0px; }
+.footer-nav li:last-child a { padding: 0px 0px 0px 10px; border: none; }
