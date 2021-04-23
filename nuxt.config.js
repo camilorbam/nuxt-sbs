@@ -33,7 +33,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/mixins.scss","~/assets/sass/main.scss"],
+  css: ["~/assets/sass/main.scss"],
 
   loading: { color: "#fff" },
 
@@ -88,7 +88,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/sass/abstracts/variables.scss'],
     theme: {
       dark: true,
       themes: {

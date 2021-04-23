@@ -1,8 +1,8 @@
 $version: '1.0.8';
 /* Spritesheet Path */
-$spritesheet: #{'/spritesheets/spritesheet.png?v=' + $version};
-$spritesheet-sbw: #{'/spritesheets/spritesheet-sb-wizard.png?v=' + $version};
-$spritesheet-svg: #{'/spritesheets/icons.svg?v=' + $version + '#'};
+$spritesheet: #{'/spritesheet.png?v=' + $version};
+$spritesheet-sbw: #{'/spritesheet-sb-wizard.png?v=' + $version};
+$spritesheet-svg: #{'/icons.svg?v=' + $version + '#'};
 
 // Scales
 $blue-900: #263238;
